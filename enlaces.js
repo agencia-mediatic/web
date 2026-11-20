@@ -8,7 +8,6 @@ window.MEDIATIC = {
 
   ENLACES: {
     'cabecera':     'https://form.mediatic.io/?utm_source=web&utm_medium=home&utm_campaign=bt-sup-ag-lla',  // Botón de arriba a la derecha: "Agendar llamada" (sale en todas las páginas)
-    'contrataciones':'', // Opción "Contrataciones" del menú de arriba
     'hero':         'https://form.mediatic.io/?utm_source=web&utm_medium=home&utm_campaign=bt-qro-resul',  // Botón del inicio: "Quiero conseguir estos resultados"
     'quienes-somos':'https://form.mediatic.io/?utm_source=web&utm_medium=home&utm_campaign=bt-qin-som',  // Botón de ¿Quiénes somos?: "Quiero que trabajemos juntos"
     'resultados':   'https://form.mediatic.io/?utm_source=web&utm_medium=home&utm_campaign=resul',  // Botón del bloque azul de reels: "Quiero estos resultados"

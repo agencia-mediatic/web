@@ -152,3 +152,8 @@ document.addEventListener('click',function(e){
   if(!a||!window.__mtGA||typeof window.gtag!=='function')return;
   window.gtag('event','cta_click',{enlace:a.dataset.link,texto:(a.textContent||'').trim().slice(0,60),pagina:location.pathname});
 });
+
+// Casos de éxito: se muestran de 6 en 6 con el botón "Ver más casos"
+(function(){const g=document.querySelector('.ccards'),w=document.querySelector('.ccards-more');if(!g||!w)return;const N=6,cards=[...g.children];if(cards.length<=N)return;let shown=N;
+cards.forEach((c,i)=>{if(i>=N)c.hidden=true});w.hidden=false;
+w.querySelector('button').addEventListener('click',()=>{cards.slice(shown,shown+N).forEach(c=>c.hidden=false);shown+=N;if(shown>=cards.length)w.hidden=true})})();

@@ -3,7 +3,7 @@ import time
 V=str(int(time.time()))
 import os
 OUT='/Users/mediaticmac/landing-page/web'
-NAV=[('index.html','Home',''),('index.html#resultados','Resultados',''),('index.html#opiniones','Opiniones',''),('contrataciones.html','Contrataciones','contrataciones'),('blog.html','Blog','')]
+NAV=[('index.html','Home',''),('resultados.html','Casos de éxito',''),('opiniones.html','Opiniones',''),('blog.html','Blog','')]
 SITE='https://www.mediatic.io'   # <-- dominio definitivo de la web (sin barra final). Cámbialo aquí si es otro.
 IG='https://www.instagram.com/mediatic.io/'
 YT='https://www.youtube.com/@mediatic.agencia'
@@ -12,14 +12,15 @@ SEO={
  'equipo.html':('Equipo de expertos en contenido viral | Mediatic','Conoce al equipo de Mediatic: fundadores, guionistas, filmmakers y editores especializados en crear contenido viral para negocios y marcas personales.',True),
  'clientes.html':('Clientes y casos de éxito en redes sociales | Mediatic','Más de 100 clientes satisfechos y más de 30 nichos viralizados. Mira con quién trabajamos y los resultados que conseguimos con contenido orgánico.',True),
  'blog.html':('Noticias y artículos de contenido orgánico | Mediatic','Noticias y artículos de Mediatic: novedades sobre contenido orgánico para que aprendas y apliques en tu negocio, y logros de la agencia y su equipo.',False),
- 'contrataciones.html':('Empleo: Editor, Filmmaker y Guionista | Mediatic','Trabaja con nosotros: buscamos editor, filmmaker y guionista para crear contenido viral en Mediatic, agencia de contenido en Barcelona.',True),
+ 'opiniones.html':('Opiniones de clientes sobre Mediatic | Agencia de contenido','Opiniones de clientes de Mediatic: charlas en vídeo y reseñas de negocios y marcas personales que han crecido en Instagram con contenido viral.',True),
+ 'resultados.html':('Casos de éxito de contenido viral | Mediatic','Casos de éxito de Mediatic: negocios y marcas personales que generan más negocio con contenido orgánico en Instagram. Más de 300 millones de views.',True),
  'aviso-legal.html':('Aviso Legal | Mediatic','Aviso legal de Mediatic Studios SL: identificación del titular, condiciones de uso, medidas de seguridad y propiedad intelectual.',True),
  'politica-privacidad.html':('Política de Privacidad | Mediatic','Política de privacidad de Mediatic Studios SL: cómo tratamos tus datos personales, tus derechos y cómo ejercerlos.',True),
  'politica-cookies.html':('Política de Cookies | Mediatic','Política de cookies de Mediatic Studios SL: qué cookies usamos, para qué sirven y cómo gestionarlas.',True),
  '404.html':('Página no encontrada | Mediatic','La página que buscas no existe. Vuelve al inicio de Mediatic, agencia de contenido viral en Barcelona.',False),
 }
 # En SEO[...][2]: True = se indexa; False = noindex (blog hasta tener artículos reales, 404 siempre)
-CRUMBS={'equipo.html':'Equipo','clientes.html':'Clientes','blog.html':'Blog','contrataciones.html':'Contrataciones','aviso-legal.html':'Aviso Legal','politica-privacidad.html':'Política de Privacidad','politica-cookies.html':'Política de Cookies'}
+CRUMBS={'equipo.html':'Equipo','clientes.html':'Clientes','blog.html':'Blog','resultados.html':'Casos de éxito','opiniones.html':'Opiniones','aviso-legal.html':'Aviso Legal','politica-privacidad.html':'Política de Privacidad','politica-cookies.html':'Política de Cookies'}
 
 from seguir_leyendo import seguir
 ART_META={'mitos-de-instagram.html':dict(
@@ -124,7 +125,7 @@ ART_META=dict(sorted(ART_META.items(),key=lambda kv:kv[1].get('date',''),reverse
 def canon(file): return SITE+('/' if file=='index.html' else '/'+file)
 def esc(t): return t.replace('&','&amp;').replace('"','&quot;').replace('<','&lt;')
 def jsonld(file,title,desc):
-    org={"@type":"ProfessionalService","@id":SITE+"/#organization","name":"Mediatic","legalName":"MEDIATIC STUDIOS SL","url":SITE+"/","logo":SITE+"/logo-mediatic-azul.png","image":SITE+"/img/og-image.jpg","description":"Agencia de contenido viral en Barcelona especializada en crear contenido orgánico para Instagram, para negocios y marcas personales.","email":"info@mediatic.io","slogan":"Agencia de contenido viral en Barcelona","address":{"@type":"PostalAddress","streetAddress":"Plaça Pau Casals, 96","addressLocality":"Sant Fruitós de Bages","addressRegion":"Barcelona","postalCode":"08272","addressCountry":"ES"},"areaServed":{"@type":"AdministrativeArea","name":"Barcelona"},"sameAs":[IG,YT]}
+    org={"@type":"ProfessionalService","@id":SITE+"/#organization","name":"Mediatic","legalName":"MEDIATIC STUDIOS SL","url":SITE+"/","logo":SITE+"/logo-mediatic-azul.png","image":SITE+"/img/og-image.jpg","description":"Agencia de contenido viral en Barcelona especializada en crear contenido orgánico para Instagram, para negocios y marcas personales.","email":"info@mediatic.io","slogan":"Agencia de contenido viral en Barcelona","address":{"@type":"PostalAddress","streetAddress":"Plaça Pau Casals, 96","addressLocality":"Sant Fruitós de Bages","addressRegion":"Barcelona","postalCode":"08272","addressCountry":"ES"},"areaServed":{"@type":"AdministrativeArea","name":"Barcelona"},"foundingDate":"2024","knowsAbout":["Contenido viral","Creación de contenido para redes sociales","Instagram","TikTok","Guiones para reels"],"contactPoint":{"@type":"ContactPoint","contactType":"sales","email":"info@mediatic.io","availableLanguage":"es"},"founder":[{"@type":"Person","@id":SITE+"/#roger-gaona","name":"Roger Gaona Boixader","jobTitle":"Fundador","worksFor":{"@id":SITE+"/#organization"},"sameAs":["https://www.instagram.com/roggaona/"]},{"@type":"Person","@id":SITE+"/#esteve-gaona","name":"Esteve Gaona Boixader","jobTitle":"Fundador","worksFor":{"@id":SITE+"/#organization"},"sameAs":["https://www.instagram.com/esteve.gaona/"]}],"sameAs":[IG,YT]}
     site={"@type":"WebSite","@id":SITE+"/#website","url":SITE+"/","name":"Mediatic","inLanguage":"es-ES","publisher":{"@id":SITE+"/#organization"}}
     pg={"@type":"WebPage","@id":canon(file)+"#webpage","url":canon(file),"name":title,"description":desc,"inLanguage":"es-ES","isPartOf":{"@id":SITE+"/#website"},"about":{"@id":SITE+"/#organization"}}
     graph=[org,site,pg]
@@ -139,10 +140,25 @@ def jsonld(file,title,desc):
         elif not a.get('draft'): graph.append({"@type":"BlogPosting","@id":canon(file)+"#article","mainEntityOfPage":{"@id":canon(file)+"#webpage"},"headline":a['h1'],"description":a['desc'],"datePublished":a['date'],"dateModified":a['date'],"inLanguage":"es-ES","author":{"@id":SITE+"/#organization"},"publisher":{"@id":SITE+"/#organization"},"image":SITE+("/"+a['thumb'] if os.path.exists(os.path.join(OUT,a['thumb'])) else "/img/og-image.jpg"),"articleSection":a['cat']})
         if file=='guion-perfecto-instagram.html': graph.append({"@type":"HowTo","name":"Cómo escribir el guion perfecto para Instagram","step":[{"@type":"HowToStep","position":i+1,"name":n} for i,n in enumerate(["Encuentra ideas de contenido","Valida las ideas","Elige el formato","Escribe la primera versión del guion","Adapta y personaliza el guion"])]})
         _q=re.findall(r'<details><summary>(.*?)</summary><p>(.*?)</p></details>',open(os.path.join(OUT,'_build','servicios_page.html' if file=='servicios.html' else 'articulos/'+file),'r').read())
-        if _q and not a.get('draft'): graph.append({"@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":re.sub('<[^>]+>','',a2)}} for q,a2 in _q]})
+        if _q and not a.get('draft'): graph.append({"@type":"FAQPage","mainEntity":[{"@type":"Question","name":re.sub('<[^>]+>','',q),"acceptedAnswer":{"@type":"Answer","text":re.sub('<[^>]+>','',a2)}} for q,a2 in _q]})
     if file=='index.html':
         exec(open('/Users/mediaticmac/landing-page/web/_build/faq_data.py').read(),globals())
         graph.append({"@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in FAQ_DATA]})
+    def _vid(vid,name,desc,thumb,date,dur=None):   # ficha de vídeo (VideoObject)
+        v={"@type":"VideoObject","name":name,"description":desc.strip(),"thumbnailUrl":SITE+"/"+thumb,"uploadDate":date,"embedUrl":"https://www.youtube.com/embed/"+vid,"contentUrl":"https://www.youtube.com/watch?v="+vid,"inLanguage":"es-ES","publisher":{"@id":SITE+"/#organization"}}
+        if dur: v["duration"]=dur
+        return v
+    def _vid_ent(t):
+        ds='Entrevista en vídeo con %s%s sobre su experiencia trabajando con Mediatic. %s'%(t['name'],(' (%s)'%t['niche']) if t.get('niche') else '',t.get('context',''))
+        return _vid(t['id'],'%s: %s'%(t['name'],t['headline'].strip('“”"')),ds,'img/entrevistas/%s.jpg'%t['id'],t['uploadDate'],t.get('duration'))
+    if file=='opiniones.html':   # una ficha de vídeo por cada entrevista de YouTube
+        graph+= [_vid_ent(t) for t in _E if t.get('uploadDate')]
+    elif file in ART_META and not ART_META[file].get('draft'):   # vídeos incrustados en los artículos
+        _ap=os.path.join(OUT,'_build','articulos',file)
+        for _i in (re.findall(r'<!--VIDEO:([\w-]+)',open(_ap,'r').read()) if os.path.exists(_ap) else []):
+            _t=next((x for x in _E if x['id']==_i and x.get('uploadDate')),None)
+            if _t: graph.append(_vid_ent(_t))
+        if file=='mitos-de-instagram.html': graph.append(_vid('kX7RTLibXrs','Desmintiendo mitos sobre redes sociales','Vídeo del canal de Mediatic en el que respondemos, según nuestra experiencia, a los mitos y falsas verdades sobre Instagram y redes sociales que más se han extendido.','img/blog/mitos-de-instagram.jpg','2026-04-21T11:56:44-07:00','PT14M26S'))
     return json.dumps({"@context":"https://schema.org","@graph":graph},ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
 
 from PIL import Image as _Img
@@ -158,16 +174,9 @@ def header(cur):
   <button class="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
 </header>'''
 FOOT='''<footer><div class="wrap">
-  <div class="fcols">
-    <div class="fcol"><p class="ftitle">Redes sociales</p>
-      <a data-social="instagram" href="https://www.instagram.com/mediatic.io/" target="_blank" rel="noopener">Instagram</a><a data-social="youtube" href="https://www.youtube.com/@mediatic.agencia" target="_blank" rel="noopener">YouTube</a><a data-social="linkedin" href="#">LinkedIn</a>
-      <small>Mediatic Studios SL ©2026</small>
-    </div>
-    <nav class="fcol" aria-label="Páginas de interés"><p class="ftitle">Páginas de interés</p>
-      <a href="index.html">Home</a><a href="equipo.html">Equipo</a><a href="clientes.html">Clientes</a><a href="blog.html">Blog</a><a href="index.html#contacto">Contacto</a><a href="contrataciones.html" data-link="contrataciones">Contrataciones</a></nav>
-    <nav class="fcol" aria-label="Legal"><p class="ftitle">Legal</p>
-      <a data-legal="aviso" href="aviso-legal.html">Aviso legal</a><a data-legal="privacidad" href="politica-privacidad.html">Política de privacidad</a><a data-legal="cookies" href="politica-cookies.html">Política de cookies</a><button type="button" data-open-cookies>Configurar cookies</button></nav>
-  </div>
+  <nav class="flinks" aria-label="Páginas de interés"><a href="index.html">Home</a><a href="resultados.html">Casos de éxito</a><a href="opiniones.html">Opiniones</a><a href="blog.html">Blog</a></nav>
+  <div class="fbot"><small>Mediatic Studios SL ©2026</small><div class="fsocial"><a data-social="instagram" href="https://www.instagram.com/mediatic.io/" target="_blank" rel="noopener" aria-label="Instagram de Mediatic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></a><a data-social="youtube" href="https://www.youtube.com/@mediatic.agencia" target="_blank" rel="noopener" aria-label="YouTube de Mediatic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3z"/></svg></a><a data-social="linkedin" href="#" aria-label="LinkedIn de Mediatic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.300 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.6V9h3.5v11.5z"/></svg></a></div></div>
+  <nav class="flegal" aria-label="Legal"><a data-legal="aviso" href="aviso-legal.html">Aviso legal</a><a data-legal="privacidad" href="politica-privacidad.html">Política de privacidad</a><a data-legal="cookies" href="politica-cookies.html">Política de cookies</a><button type="button" data-open-cookies>Configurar cookies</button></nav>
 </div>
 <div class="fplanes" aria-hidden="true" role="presentation"><svg viewBox="0 -14 1600 274" preserveAspectRatio="xMidYMid meet"><defs><symbol id="mtp" viewBox="342 590 1203 865"><polygon points="1545,590 342,942 648,1060 681,1180 826,1082 921,1455" fill="#F0F0EF"/><polygon points="648,1060 681,1180 826,1082" fill="#1B1BCB" fill-opacity=".38"/></symbol></defs><path d="M-20 123.8 L0 128.0 L20 132.2 L40 136.3 L60 140.4 L80 144.4 L100 148.2 L120 151.9 L140 155.4 L160 158.8 L180 161.8 L200 164.7 L220 167.2 L240 169.5 L260 171.4 L280 173.0 L300 174.3 L320 175.2 L340 175.8 L360 176.0 L380 175.8 L400 175.3 L420 174.4 L440 173.2 L460 171.6 L480 169.7 L500 167.5 L520 165.0 L540 162.2 L560 159.2 L580 155.9 L600 152.4 L620 148.7 L640 144.9 L660 140.9 L680 136.8 L700 132.7 L720 128.5 L740 124.4 L760 120.2 L780 116.1 L800 112.1 L820 108.3 L840 104.5 L860 101.0 L880 97.7 L900 94.5 L920 91.7 L940 89.1 L960 86.8 L980 84.8 L1000 83.2 L1020 81.8 L1040 80.9 L1060 80.3 L1080 80.0 L1100 80.1 L1120 80.6 L1140 81.4 L1160 82.6 L1180 84.1 L1200 86.0 L1220 88.2 L1240 90.6 L1260 93.4 L1280 96.4 L1300 99.7 L1320 103.2 L1340 106.8 L1360 110.6 L1380 114.6 L1400 118.6 L1420 122.8 L1440 126.9 L1460 131.1 L1480 135.2 L1500 139.3 L1520 143.4 L1540 147.2 L1560 151.0 L1580 154.6 L1600 157.9 L1620 161.1 L1640 164.0" fill="none" stroke="#F0F0EF" stroke-opacity=".55" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 17"/><g class="pb" style="animation-delay:-0.0s"><g transform="rotate(44.8 90 146.3)" opacity="0.9"><use href="#mtp" x="15" y="92.4" width="150" height="107.9"/></g></g><g class="pb" style="animation-delay:-0.9s"><g transform="rotate(37.0 300 174.3)" opacity="1"><use href="#mtp" x="240" y="131.2" width="120" height="86.3"/></g></g><g class="pb" style="animation-delay:-1.8s"><g transform="rotate(26.3 520 165.0)" opacity="0.55"><use href="#mtp" x="425" y="96.7" width="190" height="136.6"/></g></g><g class="pb" style="animation-delay:-2.7s"><g transform="rotate(22.1 740 124.4)" opacity="1"><use href="#mtp" x="670" y="74.0" width="140" height="100.7"/></g></g><g class="pb" style="animation-delay:-3.6s"><g transform="rotate(26.5 930 90.3)" opacity="0.85"><use href="#mtp" x="875" y="50.8" width="110" height="79.1"/></g></g><g class="pb" style="animation-delay:-4.5s"><g transform="rotate(36.3 1130 81.0)" opacity="0.6"><use href="#mtp" x="1042" y="18.0" width="175" height="125.8"/></g></g><g class="pb" style="animation-delay:-5.4s"><g transform="rotate(44.3 1330 105.0)" opacity="1"><use href="#mtp" x="1262" y="56.4" width="135" height="97.1"/></g></g><g class="pb" style="animation-delay:-6.3s"><g transform="rotate(45.1 1520 143.4)" opacity="0.8"><use href="#mtp" x="1457" y="98.4" width="125" height="89.9"/></g></g></svg></div></footer>'''
 def page(file,title,body):
@@ -241,6 +250,13 @@ RESULTS=('<section class="results" id="opiniones"><div class="wrap"><div class="
  '<h2 class="sec-h"><span class="strike">No lo decimos nosotros</span><br><span class="hand">lo dicen ellos</span></h2>'
  '<p class="sub" style="max-width:700px">Charlas con nuestros clientes que revelan su opinión sobre el servicio.</p>'
  '<div class="rgrid">'+''.join(_card(t) for t in _E)+'</div></div></section>')
+# --- HOME: solo 3 entrevistas (Marina, Mario, Gisela) + "Ver más" → opiniones.html ---
+_HOME_ENT=[0,2,1]
+RESULTS_HOME=('<section class="results" id="opiniones"><div class="wrap"><div class="tag">Opiniones</div>'
+ '<h2 class="sec-h"><span class="strike">No lo decimos nosotros</span><br><span class="hand">lo dicen ellos</span></h2>'
+ '<p class="sub" style="max-width:700px">Charlas con nuestros clientes que revelan su opinión sobre el servicio.</p>'
+ '<div class="rgrid">'+''.join(_card(_E[i]) for i in _HOME_ENT)+'</div>'
+ '<div class="more-cta"><a class="btn" href="opiniones.html">Ver más opiniones <i>→</i></a></div></div></section>')
 _RES_ROWS=[[1, 37, 73, 34, 70, 31, 67, 28, 64, 25, 61, 22, 58, 19, 55, 16, 52, 13, 49, 10, 46, 7, 43, 4, 40], [26, 62, 23, 59, 20, 56, 17, 53, 14, 50, 11, 47, 8, 44, 5, 41, 2, 38, 74, 35, 71, 32, 68, 29, 65], [15, 51, 12, 48, 9, 45, 6, 42, 3, 39, 75, 36, 72, 33, 69, 30, 66, 27, 63, 24, 60, 21, 57, 18, 54]]
 def _rrow(ids,rev):
     cards=''.join('<div class="rr"><img src="img/resultados/v%02d.jpg" alt="Vídeo de resultados de un cliente de Mediatic" width="300" height="469" loading="lazy" decoding="async"></div>'%i for i in ids)
@@ -249,6 +265,20 @@ def _rrow(ids,rev):
 RES2=('<section class="reels" id="resultados"><div class="wrap"><div class="reels-box">'
  '<div class="reels-head"><div class="tag">Resultados</div>'
  '<h2 class="sec-h">+300 millones de views, <span class="hand">y sumando</span></h2></div>'
+ '<div class="reels-rows">'+_rrow(_RES_ROWS[0],False)+_rrow(_RES_ROWS[1],True)+_rrow(_RES_ROWS[2],False)+'</div>'
+ '<div class="reels-cta"><a class="btn light" href="index.html#contacto" data-link="resultados">Quiero estos resultados <i>→</i></a></div>'
+ '</div></div></section>')
+# --- HOME: una sola tira con todos los vídeos rotando + "Ver más" → resultados.html ---
+_ALL=[x for t in zip(*_RES_ROWS) for x in t]
+RES2_HOME=('<section class="reels" id="resultados"><div class="wrap"><div class="reels-box">'
+ '<div class="reels-head"><div class="tag">Resultados</div>'
+ '<h2 class="sec-h">+300 millones de views, <span class="hand">y sumando</span></h2></div>'
+ '<div class="reels-rows">'+_rrow(_ALL,False).replace('class="rtrack','class="rtrack one')+'</div>'
+ '<div class="reels-cta"><a class="btn light" href="resultados.html">Ver más resultados <i>→</i></a>'
+ '<a class="btn light" href="index.html#contacto" data-link="resultados">Quiero estos resultados <i>→</i></a></div>'
+ '</div></div></section>')
+# --- Página de resultados (3 tiras, sin cabecera interna) ---
+RES2_PAGE=('<section class="reels" id="resultados"><div class="wrap"><div class="reels-box">'
  '<div class="reels-rows">'+_rrow(_RES_ROWS[0],False)+_rrow(_RES_ROWS[1],True)+_rrow(_RES_ROWS[2],False)+'</div>'
  '<div class="reels-cta"><a class="btn light" href="index.html#contacto" data-link="resultados">Quiero estos resultados <i>→</i></a></div>'
  '</div></div></section>')
@@ -289,8 +319,8 @@ REVIEWS=('<section class="greviews" id="resenas" aria-labelledby="h-resenas"><di
  '<div class="gnav"><button class="garr" data-d="-1" aria-label="Anterior">←</button>'+''.join(_gav(i,n,img) for i,(n,sub,txt,img) in enumerate(_REV))+'<button class="garr" data-d="1" aria-label="Siguiente">→</button></div>'
  '</div></section>')
 exec(open('/Users/mediaticmac/landing-page/web/_build/faq_data.py').read())
-faq=''.join('<details><summary>%s</summary><p>%s</p></details>'%(q,a) for q,a in FAQ_DATA)
-FAQ_BLUE='<section class="faq faq-blue" id="faq"><div class="wrap"><div class="tag">Por si te quedas con dudas</div><h2 class="sec-h">Preguntas frecuentes</h2><p class="sub">Resuelve todas las dudas que tengas.</p><div class="faq-list">'+faq+'</div></div></section>'
+faq=''.join('<details><summary><h3>%s</h3></summary><p>%s</p></details>'%(q,a) for q,a in FAQ_DATA)
+FAQ_BLUE='<section class="faq faq-blue" id="faq"><div class="wrap"><div class="tag">Por si te quedas con dudas</div><h2 class="sec-h">Preguntas frecuentes sobre contenido para redes sociales</h2><p class="sub">Resuelve todas las dudas que tengas.</p><div class="faq-list">'+faq+'</div></div></section>'
 QUOTE=open('/Users/mediaticmac/landing-page/web/_build/quote.html').read()
 # HOME
 page('index.html','Mediatic | Agencia de contenido orgánico',f'''
@@ -306,11 +336,15 @@ page('index.html','Mediatic | Agencia de contenido orgánico',f'''
  </div></div></div></section>
 <section><div class="wrap"><div class="tag">Clientes</div><h2 class="sec-h" style="margin-bottom:28px">Estos son nuestros <span class="strike">clientes</span> <span class="hand">amigos</span></h2>{MARQ}</div></section>
 {ABOUT}
-{RESULTS}{RES2}{TEAM}{REVIEWS}{QUOTE}
+{RESULTS_HOME}{RES2_HOME}{TEAM}{REVIEWS}{QUOTE}
 {FAQ_BLUE}''')
 
+# PÁGINAS NUEVAS: opiniones y resultados (el menú de arriba apunta aquí)
+page('opiniones.html','Opiniones | Mediatic','<section class="page-head ph-center ph-tight"><div class="wrap"><div class="tag">Opiniones de Mediatic</div><h1>Escucha a quienes ya <span class="pen">crecen con nosotros</span></h1><p class="sub">Entrevistas con nuestros clientes, donde son ellos mismos los que cuentan, con sus propias palabras, los beneficios de trabajar con Mediatic y cómo ha cambiado su negocio desde que lo hacen.</p></div></section><section class="results opi-sec" style="padding-top:0"><div class="wrap"><h2 class="sr-only">Opiniones de clientes de Mediatic: entrevistas en vídeo</h2><div class="rgrid opi-grid" style="margin-top:0">'+''.join(_card(t) for t in _E)+'</div></div><div class="flight" aria-hidden="true"><svg class="fl-path" viewBox="0 0 1000 392" preserveAspectRatio="none" focusable="false"><path d="M0 140 C 50 140 110 230 150 300 C 173 340 260 385 340 385 C 420 385 505 350 545 300 C 570 268 580 190 620 190 C 660 190 685 250 697 300 C 707 334 735 372 770 372 C 805 372 835 360 860 352" fill="none" stroke="#1B1BCB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></svg><svg class="fl-plane" focusable="false"><g transform="rotate(17) scale(.12) translate(-718 -1107)"><polygon points="1545,590 342,942 648,1060 681,1180 826,1082 921,1455" fill="#1B1BCB"/><polygon points="648,1060 681,1180 826,1082" fill="#fff" fill-opacity=".35"/></g></svg></div></section><section class="rev-intro"><div class="wrap"><div class="casos-intro"><p class="ci-eyebrow">Clientes satisfechos</p><h2 class="sec-h">Clientes que confían en Mediatic</h2><p class="ci-sub">Más de 100 empresas y profesionales ya han confiado en nuestro equipo para hacer crecer sus redes sociales.<br>Descubre lo que opinan en Google sobre Mediatic.</p></div></div></section>'+REVIEWS+QUOTE)
+# (la página resultados.html se genera más abajo, después de definir las tarjetas del blog)
 
-page('equipo.html','Equipo | Mediatic',head('Equipo','¿Quién está detrás de <span class="acc">Mediatic</span>?','Nuestro equipo de expertos en contenido')+'<section style="padding-top:0"><div class="wrap"><h2 class="sr-only">Miembros del equipo de Mediatic</h2>'+TEAM_GRID+'</div></section>')
+
+page('equipo.html','Equipo | Mediatic',head('Equipo','El equipo de <span class="acc">Mediatic</span>: expertos en contenido viral','Nuestro equipo de expertos en contenido')+'<section style="padding-top:0"><div class="wrap"><h2 class="sr-only">Miembros del equipo de Mediatic</h2>'+TEAM_GRID+'</div></section>')
 
 page('clientes.html','Clientes | Mediatic',head('Clientes','Estos son nuestros <span class="strike">clientes</span> <span class="hand">amigos</span>','Negocios, marcas y creadores que ya crecen en redes sociales con Mediatic.')+f'<section><div class="wrap">{MARQ}</div></section>{RESULTS}{RES2}{REVIEWS}')
 
@@ -324,7 +358,46 @@ def _real(f,a):
     return f'<a class="post" href="{f}" data-cat="{a["cat"]}">{th}<div class="c">{a["cat"]}{soon}</div><h3>{a["h1"]}</h3><p class="sub" style="font-size:16px">{a["excerpt"]}</p>{dt}</a>'
 posts=''.join(_real(f,a) for f,a in ART_META.items())
 bfilter='<div class="bfilter" role="group" aria-label="Filtrar artículos por categoría"><button type="button" class="on" data-cat="">Todos</button>'+''.join(f'<button type="button" data-cat="{c}">{c}</button>' for c in BLOG_CATS)+'</div>'
-page('blog.html','Blog | Mediatic',head('Blog','Noticias y artículos de <span class="acc">Mediatic</span>','Últimas noticias y novedades sobre el funcionamiento del contenido orgánico, para que aprendas y lo apliques en tu negocio. También verás las noticias y logros de la agencia.')+f'<section><div class="wrap">{bfilter}<h2 class="sr-only">Últimos artículos del blog</h2><div class="posts">{posts}</div><p class="bempty" hidden>Todavía no hay artículos en esta categoría. Muy pronto publicaremos novedades.</p></div></section>'+FAQ_BLUE)
+page('blog.html','Blog | Mediatic',head('Blog','Blog de <span class="acc">contenido viral</span>: consejos, noticias y casos de éxito','Últimas noticias y novedades sobre el funcionamiento del contenido orgánico, para que aprendas y lo apliques en tu negocio. También verás las noticias y logros de la agencia.')+f'<section><div class="wrap">{bfilter}<h2 class="sr-only">Últimos artículos del blog</h2><div class="posts">{posts}</div><p class="bempty" hidden>Todavía no hay artículos en esta categoría. Muy pronto publicaremos novedades.</p></div></section>')
+
+# ---- CASOS DE ÉXITO (menú «Casos de éxito»): cabecera + vídeos + casos del blog ----
+# El avión llega por encima de la caja azul de vídeos, se "mete" en ella (queda tapado por la caja) y sale por debajo.
+def _plane(x,y,rot,s=.11):
+    # (x,y) = punto donde el camino llega al avión (la muesca de la cola); el avión sigue hacia delante
+    return ('<g transform="translate(%s %s) rotate(%s) scale(%s) translate(-718 -1107)">'
+     '<polygon points="1545,590 342,942 648,1060 681,1180 826,1082 921,1455" fill="#1B1BCB"/>'
+     '<polygon points="648,1060 681,1180 826,1082" fill="#fff" fill-opacity=".35"/></g>')%(x,y,rot,s)
+# Un solo avión: el camino entra desde la izquierda, se mete bajo la caja azul y sale por arriba a la derecha, donde termina el avión.
+_PD_IN=('<svg class="pd pd-in" viewBox="0 0 800 140" aria-hidden="true" focusable="false">'
+ '<path d="M0 138 C 140 52 300 10 460 54 C 580 86 660 126 740 148" fill="none" stroke="#1B1BCB" stroke-width="6" stroke-linecap="round"/></svg>')
+_PD_OUT_S=('<svg class="pd pd-out-s" viewBox="0 0 260 130" aria-hidden="true" focusable="false">'
+ '<path d="M26 140 C 90 135 140 120 190 72" fill="none" stroke="#1B1BCB" stroke-width="5" stroke-linecap="round"/>'
+ +_plane(190,72,-12,.085)+'</svg>')
+_PD_OUT=('<svg class="pd pd-out" viewBox="0 0 420 340" aria-hidden="true" focusable="false">'
+ '<path d="M110 352 C 170 300 235 215 300 150" fill="none" stroke="#1B1BCB" stroke-width="6" stroke-linecap="round"/>'
+ +_plane(300,150,-13,.12)+'</svg>')
+_RES2_CASOS=RES2_PAGE.replace('<div class="wrap"><div class="reels-box">','<div class="wrap">'+_PD_IN+_PD_OUT+_PD_OUT_S+'<div class="reels-box"><div class="reels-head"><h2 class="sec-h">+300 millones de views, <span class="hand">y sumando</span></h2></div>')
+# Tarjetas de casos de éxito (enlazan al artículo del blog). Pack = pendiente de definir por el cliente.
+CASOS_CARD={
+ 'caso-exito-manuel-costina.html':('Manuel Costiña','Chef','Próximamente',''),
+ 'caso-exito-gisela-jorba.html':('Gisela Jorba','Micropigmentación','De 6.000 a 24.400 seguidores',' dentro de su nicho, con la lista de espera duplicada y más de 50 ventas en el lanzamiento de su formación online.'),
+ 'caso-exito-marina-garrido.html':('Dra. Marina Garrido','Clínica de injertos capilares','+1,2M de visualizaciones en 3 meses',' con 12 vídeos y menos de dos horas al mes de dedicación.'),
+ 'caso-exito-mario-cozma.html':('Mario Cozma','Transporte y logística','De 34.000 a 77.700 seguidores',' en Instagram y el canal de YouTube duplicado: el referente del transporte en redes.'),
+ 'de-profundis.html':('De Profundis','Buceo técnico','De menos de 1.000 a más de 6.200 seguidores',' y clientes cada día, con menos de 6 horas de dedicación cada tres meses.'),
+}
+CASOS_PACK={'caso-exito-manuel-costina.html':'Pack Pro','caso-exito-gisela-jorba.html':'Pack Básico','caso-exito-marina-garrido.html':'Pack Starter','caso-exito-mario-cozma.html':'Pack Pro','de-profundis.html':'Pack Starter'}
+CASOS_USER={'caso-exito-gisela-jorba.html':'@giselajorba_micropigmentacion','caso-exito-marina-garrido.html':'@dra.marinagarrido','caso-exito-mario-cozma.html':'@mcozma1','de-profundis.html':'@de_profundis_ig'}   # Manuel Costiña: pendiente de usuario
+CASOS_AVATAR={'caso-exito-manuel-costina.html':'img/clientes/c01.jpg','caso-exito-gisela-jorba.html':'img/testimonios/gisela.png','caso-exito-marina-garrido.html':'img/testimonios/marina.png','caso-exito-mario-cozma.html':'img/testimonios/mario.png','de-profundis.html':'img/testimonios/deprofundis.png'}
+def _ccard(f,a):
+    n,nicho,hb,hr=CASOS_CARD[f]
+    pk=CASOS_PACK.get(f,'Pack por definir')
+    ph=('<img src="%s" alt="Foto de %s" width="640" height="400" loading="lazy" decoding="async">'%(a['thumb'],esc(n))) if os.path.exists(os.path.join(OUT,a['thumb'])) else ''
+    av=CASOS_AVATAR.get(f,'')
+    avh=('<img src="%s" alt="%s" width="64" height="64" loading="lazy">'%(av,esc(n))) if av and os.path.exists(os.path.join(OUT,av)) else '<span class="rinit" aria-hidden="true">%s</span>'%''.join(w[0] for w in n.split()[:2]).upper()
+    return ('<a class="ccard" href="%s"><div class="cc-top"><div class="rauth">%s<div class="rwho"><h3>%s</h3>%s</div></div><span class="cc-pack">%s</span></div><div class="cc-photo">%s</div>'
+            '<div class="cc-body"><span class="cc-niche">%s</span><p class="cc-hl"><b>%s</b>%s</p></div></a>')%(f,avh,esc(n),('<small>%s</small>'%esc(CASOS_USER[f])) if f in CASOS_USER else '',esc(pk),ph,esc(nicho),esc(hb),esc(hr))
+_CASOS=''.join(_ccard(f,a) for f,a in ART_META.items() if f in CASOS_CARD)
+page('resultados.html','Casos de éxito | Mediatic','<section class="page-head ph-center"><div class="wrap"><div class="tag">Casos de éxito de Mediatic</div><h1>Nuestros clientes generan <span class="pen">más negocio</span> con contenido viral</h1><p class="sub">Con estrategias de contenido personalizadas, guiones validados y vídeos virales que atraen público cualificado y convierten tus redes en una fuente constante de clientes.</p></div></section>'+_RES2_CASOS+'<section class="casos-sec"><div class="wrap"><div class="casos-intro"><p class="ci-eyebrow">Datos reales de nuestros clientes</p><h2 class="sec-h">Casos de éxito de Mediatic</h2><p class="ci-sub">Hemos ayudado a negocios y marcas personales a aumentar las ventas de su negocio, a multiplicar sus visitas, sus seguidores y sus clientes con contenido orgánico. Estos son algunos de los resultados.</p></div><div class="ccards">'+_CASOS+'</div><div class="more-cta ccards-more" hidden><button type="button" class="btn">Ver más casos <i>→</i></button></div></div></section>'+QUOTE)
 
 # ---- artículos del blog ----
 for _f,_a in ART_META.items():
@@ -378,7 +451,8 @@ for _f,_t in _LEG: _legal(_f,_t)
 
 # ---- CONTRATACIONES ----
 JOBS='''<article class="job"><div class="jtop"><i class="jico"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon fill="#fff" points="80,28.5 20,46.1 35.3,52 37,58 44.2,53.1 48.9,71.7"/></svg></i><span class="jbadge">Posición abierta</span></div><h3>Editor</h3><p>Conviertes vídeo en bruto en reels que retienen hasta el final. Buscamos a alguien con ojo para el ritmo, los subtítulos y el montaje pensado para redes sociales.</p><div class="jchips"><span>Reels</span><span>Montaje</span><span>Subtítulos</span><span>Retención</span></div><div class="jfoot"><span>Remoto · Jornada completa, media jornada o freelance</span><a class="btn sm" href="mailto:info@mediatic.io?subject=Candidatura%20Editor%20-%20Mediatic" data-link="aplicar-editor">Aplicar <i>→</i></a></div></article><article class="job"><div class="jtop"><i class="jico"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon fill="#fff" points="80,28.5 20,46.1 35.3,52 37,58 44.2,53.1 48.9,71.7"/></svg></i><span class="jbadge">Posición abierta</span></div><h3>Filmmaker</h3><p>Buscamos a alguien con experiencia grabando y editando reels hablados a cámara para redes sociales. Si vives en España y crees que encajas, cuéntanos sobre ti.</p><div class="jchips"><span>Reels a cámara</span><span>Grabación</span><span>Edición</span></div><div class="jfoot"><span>Jornada completa, media jornada o freelance</span><a class="btn sm" href="../filmmakers/index.html" data-link="aplicar-filmmaker" target="_blank" rel="noopener">Aplicar <i>→</i></a></div></article><article class="job"><div class="jtop"><i class="jico"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon fill="#fff" points="80,28.5 20,46.1 35.3,52 37,58 44.2,53.1 48.9,71.7"/></svg></i><span class="jbadge">Posición abierta</span></div><h3>Guionista</h3><p>Buscamos a alguien con experiencia guionizando reels virales para redes sociales. Si vives en España y crees que encajas, cuéntanos sobre ti.</p><div class="jchips"><span>Reels virales</span><span>Hooks</span><span>Copywriting</span></div><div class="jfoot"><span>Presencial · Jornada completa, media jornada o freelance</span><a class="btn sm" href="../guionistas/index.html" data-link="aplicar-guionista" target="_blank" rel="noopener">Aplicar <i>→</i></a></div></article>'''
-page('contrataciones.html','Contrataciones | Mediatic','<section class="page-head" style="padding-bottom:10px"><div class="wrap"><div class="tag">Posiciones abiertas</div><h1>Encuentra tu sitio en <span class="acc">Mediatic</span></h1><p class="sub">Buscamos gente que quiera hacer el mejor trabajo de su carrera. Estos son los roles que tenemos abiertos. Si no ves el tuyo pero crees que sumas, escríbenos igual.</p></div></section><section style="padding-top:20px"><div class="wrap"><h2 class="sr-only">Posiciones abiertas en Mediatic</h2><div class="jobs">'+JOBS+'</div><p class="jmore">¿No es un rol que encaje contigo, pero quieres trabajar con nosotros? <a href="mailto:info@mediatic.io?subject=Quiero%20trabajar%20en%20Mediatic" data-link="contrataciones-escribenos">Escríbenos igual →</a></p></div></section>'+FAQ_BLUE)
+_CONTRATACIONES_ELIMINADA=(  # página eliminada a petición del cliente (nov 2026); ya no se genera contrataciones.html
+'<section class="page-head" style="padding-bottom:10px"><div class="wrap"><div class="tag">Posiciones abiertas</div><h1>Encuentra tu sitio en <span class="acc">Mediatic</span></h1><p class="sub">Buscamos gente que quiera hacer el mejor trabajo de su carrera. Estos son los roles que tenemos abiertos. Si no ves el tuyo pero crees que sumas, escríbenos igual.</p></div></section><section style="padding-top:20px"><div class="wrap"><h2 class="sr-only">Posiciones abiertas en Mediatic</h2><div class="jobs">'+JOBS+'</div><p class="jmore">¿No es un rol que encaje contigo, pero quieres trabajar con nosotros? <a href="mailto:info@mediatic.io?subject=Quiero%20trabajar%20en%20Mediatic" data-link="contrataciones-escribenos">Escríbenos igual →</a></p></div></section>'+FAQ_BLUE)
 
 # ---- 404, robots.txt y sitemap.xml ----
 page('404.html','Página no encontrada | Mediatic','<section class="page-head" style="min-height:62vh"><div class="wrap"><div class="tag">Error 404</div><h1>Esta página <span class="acc">no existe</span></h1><p class="sub" style="margin-bottom:30px">Puede que el enlace esté roto o que la página haya cambiado de sitio. Vuelve al inicio y te llevamos a donde quieras.</p><a class="btn" href="index.html">Ir al inicio <i>→</i></a></div></section>')
