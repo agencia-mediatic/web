@@ -34,6 +34,16 @@ window.MEDIATIC = {
     linkedin:  ''
   },
 
+  // Chat (Crisp). El chat de Crisp NO se carga hasta que la persona pulsa el botón "Chatea con Mediatic".
+  // ID: el "Website ID" de Crisp (Ajustes > Chatbox > Instalación). Si lo dejas '' el botón del chat no aparece.
+  // HORARIO: solo sirve para mostrar "En línea" (verde) dentro de ese horario; fuera sale "Te respondemos en cuanto podamos".
+  CHAT: {
+    ID: '48fefa74-f841-4915-9ae5-bff3c85c5c74',
+    TITULO: 'Habla con Roger y Esteve',
+    BOTON: 'Chatea con Mediatic',
+    HORARIO: { dias: [1, 2, 3, 4, 5], desde: '09:00', hasta: '18:00', zona: 'Europe/Madrid' }   // dias: 1 = lunes ... 7 = domingo
+  },
+
   // Textos legales (pon aquí las URL completas). Se usan en el pie de página, en el aviso de cookies y en el formulario.
   LEGAL: {
     aviso:      'aviso-legal.html',  // Aviso legal
