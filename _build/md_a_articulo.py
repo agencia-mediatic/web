@@ -32,6 +32,7 @@ INTERNAL={
  'https://www.mediatic.io/blog/gamma-pmu-congress-2026':'gamma-pmu-congress-2026.html',
  'https://www.mediatic.io/contacto-guion-perfecto-instagram':'index.html#contacto" data-link="blog-guion-perfecto-instagram',
  'https://www.mediatic.io/contacto':'index.html#contacto" data-link="blog-articulo',
+ 'https://www.mediatic.io/?utm_source=blog&utm_medium=articulo&utm_campaign=caso-pedro-seo#contacto':'index.html#contacto" data-link="blog-caso-exito-pedro-seo',
 }
 AUTOLINK={'Arrieta Micropigmentación':'https://arrietamicropigmentacion.es/','De Profundis':'https://deprofundis.es/es/'}
 def inline(t,strip_bold):

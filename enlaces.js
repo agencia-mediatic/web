@@ -24,6 +24,7 @@ window.MEDIATIC = {
     'blog-caso-exito-gisela-jorba':'https://form.mediatic.io/?utm_source=web&utm_medium=blog&utm_campaign=caso-exito-gisela-jorba',  // Enlace "cuéntanos tu proyecto" del caso de éxito de Gisela Jorba (y su botón lateral). Pendiente de enlace con UTM
     'ag-contenido-bcn':'https://form.mediatic.io/?utm_source=web&utm_medium=blog&utm_campaign=ag-contenido-bcn',  // Página «Agencia de creación de contenido en Barcelona»: todos sus botones al formulario
     'blog-guion-perfecto-instagram':'https://form.mediatic.io/?utm_source=web&utm_medium=blog&utm_campaign=guiones-instagram',  // Enlace "agendar una reunión" del artículo del guion perfecto para Instagram (y su botón lateral "Agendar diagnóstico")
+    'blog-caso-exito-pedro-seo':'https://form.mediatic.io/?utm_source=web&utm_medium=blog&utm_campaign=caso-exito-pedro-seo',  // Enlace "hablemos" del caso de éxito de Pedro SEO
     'blog-articulo':''   // Enlace de texto dentro de los artículos del blog: "agenda una sesión de diagnóstico"
   },
 
@@ -38,7 +39,7 @@ window.MEDIATIC = {
   // ID: el "Website ID" de Crisp (Ajustes > Chatbox > Instalación). Si lo dejas '' el botón del chat no aparece.
   // HORARIO: solo sirve para mostrar "En línea" (verde) dentro de ese horario; fuera sale "Te respondemos en cuanto podamos".
   CHAT: {
-    ID: '48fefa74-f841-4915-9ae5-bff3c85c5c74',
+    ID: '',   // Chat DESACTIVADO hasta tenerlo configurado. Para reactivarlo, pon aquí el Website ID de Crisp: 48fefa74-f841-4915-9ae5-bff3c85c5c74
     TITULO: 'Habla con Roger y Esteve',
     BOTON: 'Chatea con Mediatic',
     HORARIO: { dias: [1, 2, 3, 4, 5], desde: '09:00', hasta: '18:00', zona: 'Europe/Madrid' }   // dias: 1 = lunes ... 7 = domingo

@@ -63,9 +63,10 @@ ART_META['de-profundis.html']=dict(
  title='Caso de éxito en Instagram: De Profundis y el buceo técnico',
  desc='Así pasó De Profundis de menos de 1.000 seguidores a más de 6.200 y clientes diarios por Instagram, con menos de 6 horas cada tres meses. Descubre cómo.',
  h1='Caso de éxito: De Profundis',
- cat='Casos de éxito',date='2026-04-14',fecha='14 de abril de 2026',mins=6,
+ sub='Recibe clientes cada día desde Instagram con menos de 2 horas al mes',
+ cat='Resultados',date='2026-04-14',fecha='14 de abril de 2026',mins=6,
  thumb='img/blog/de-profundis-portada.jpg',
- excerpt='De Profundis pasó de menos de 1.000 seguidores a más de 6.200 y a recibir clientes cada día, con menos de 6 horas de dedicación cada tres meses.')
+ excerpt='Recibe clientes cada día desde Instagram con menos de 2 horas al mes.')
 def _draft(f,h1,cat,desc,date=None,fecha=None):
     d=dict(title=h1+' | Mediatic',desc=desc,h1=h1,cat=cat,draft=True,thumb='img/blog/%s.jpg'%f[:-5],excerpt='Próximamente.')
     if date: d.update(date=date,fecha=fecha)
@@ -75,26 +76,37 @@ ART_META.update({
  'caso-exito-marina-garrido.html':dict(
   title='Caso de éxito: Clínica Dra. Marina Garrido (1,2M de views en 3 meses)',
   desc='Así llevamos a la Clínica Dra. Marina Garrido a más de 1,2 millones de visualizaciones en tres meses, con 12 vídeos y menos de dos horas al mes.',
-  h1='Caso de éxito: Clínica Dra. Marina Garrido (1,2M de views en 3 meses)',
-  cat='Casos de éxito',date='2026-08-02',fecha='2 de agosto de 2026',mins=7,
+  h1='Caso de éxito: Clínica Dra. Marina Garrido',
+  sub='Capta clientes para su clínica a través de redes con menos de 2 horas al mes',
+  cat='Resultados',date='2026-08-02',fecha='2 de agosto de 2026',mins=7,
   thumb='img/blog/caso-exito-marina-garrido-portada.jpg',
-  excerpt='Más de 1,2 millones de visualizaciones en tres meses, con 12 vídeos y menos de dos horas al mes de dedicación: así llevamos a la clínica a Instagram y TikTok.'),
- 'caso-exito-manuel-costina.html':_draft('caso-exito-manuel-costina.html','Caso de éxito: Manuel Costiña','Casos de éxito','Caso de éxito: Manuel Costiña.','2026-11-20','20 de noviembre de 2026'),
+  excerpt='Capta clientes para su clínica a través de redes con menos de 2 horas al mes.'),
+ 'caso-exito-manuel-costina.html':_draft('caso-exito-manuel-costina.html','Caso de éxito: Manuel Costiña','Resultados','Caso de éxito: Manuel Costiña.','2026-11-20','20 de noviembre de 2026'),
  'caso-exito-gisela-jorba.html':dict(
   title='Caso de éxito: Gisela Jorba (de 6.000 a 24.400 seguidores)',
   desc='Así llevamos a Gisela Jorba de 6.000 a 24.400 seguidores dentro de su nicho, duplicamos su lista de espera y lanzamos su formación con más de 50 ventas.',
-  h1='Caso de éxito: Gisela Jorba (de 6.000 a 24.400 seguidores)',
-  cat='Casos de éxito',date='2026-09-15',fecha='15 de septiembre de 2026',mins=7,
+  h1='Caso de éxito: Gisela Jorba',
+  sub='Ha duplicado su lista de espera en su centro, pasando de 6 meses a 1 año',
+  cat='Resultados',date='2026-09-15',fecha='15 de septiembre de 2026',mins=7,
   thumb='img/blog/caso-exito-gisela-jorba.jpg',
-  excerpt='De 6.000 a 24.400 seguidores dentro de su nicho, lista de espera duplicada y más de 50 ventas en el lanzamiento de su formación online.'),
+  excerpt='Ha duplicado su lista de espera en su centro, pasando de 6 meses a 1 año.'),
  'caso-exito-mario-cozma.html':dict(
   title='Caso de éxito: Mario Cozma (+44.000 seguidores)',
   desc='De 34.000 a 77.700 seguidores: así convertimos a Mario Cozma en el referente del transporte en redes sociales, junto a su podcast Rutas de Éxito.',
-  h1='Caso de éxito: Mario Cozma (+44.000 seguidores)',
-  cat='Casos de éxito',date='2026-06-30',fecha='30 de junio de 2026',mins=9,
+  h1='Caso de éxito: Mario Cozma',
+  sub='De 34.000 a más de 77.000 seguidores en Instagram y posicionado como referente del transporte en redes',
+  cat='Resultados',date='2026-06-30',fecha='30 de junio de 2026',mins=9,
   thumb='img/blog/caso-exito-mario-cozma.jpg',
-  excerpt='Mario Cozma pasó de 34.000 a 77.700 seguidores en Instagram y duplicó su canal de YouTube: así lo hemos convertido en el referente del transporte en redes sociales.'),
+  excerpt='De 34.000 a más de 77.000 seguidores en Instagram y posicionado como referente del transporte en redes.'),
 
+ 'caso-exito-pedro-seo.html':dict(
+  title='Caso de éxito: Pedro SEO (+900.000 visualizaciones)',
+  desc='Así trabajamos el contenido de Pedro SEO: vídeos de más de 900.000 visualizaciones y una estrategia de nicho que atrae clientes con 6 horas al mes.',
+  h1='Caso de éxito: Pedro SEO',
+  sub='Capta más clientes para su agencia y más alumnos para su formación gracias a nuestro contenido',
+  cat='Resultados',date='2026-07-12',fecha='12 de julio de 2026',mins=8,
+  thumb='img/blog/caso-exito-pedro-seo.jpg',
+  excerpt='Capta más clientes para su agencia y más alumnos para su formación gracias a nuestro contenido, con solo 6 horas al mes.'),
  'guion-perfecto-instagram.html':dict(
   title='Cómo escribir el guion perfecto para Instagram: el proceso paso a paso',
   desc='Aprende a escribir el guion perfecto para Instagram: cómo encontrar ideas, validarlas, elegir el formato y adaptar tu guion para que funcione. Paso a paso.',
@@ -110,7 +122,10 @@ ART_META.update({
   thumb='img/blog/servicios-portada.jpg',
   excerpt='Qué hacemos, cómo trabajamos y para quién es nuestro servicio de creación de contenido para redes sociales.'),
 })
-GAL_ALTS={'img/blog/caso-exito-gisela-jorba-videos':['Reel de Gisela Jorba con 647 mil visualizaciones','Reel de Gisela Jorba con 274 mil visualizaciones','Reel de Gisela Jorba con 272 mil visualizaciones','Reel de Gisela Jorba con 79,8 mil visualizaciones','Reel de Gisela Jorba con 71,8 mil visualizaciones: los tres mejores eyeliners'],
+GAL_ALTS={'img/blog/pedro-seo-videos-seo':['Vídeo de Pedro SEO con 163 mil visualizaciones en Instagram sobre el botón de buscar de Google','Vídeo de Pedro SEO con 89 mil visualizaciones en Instagram: así es como puedes posicionarte','Vídeo de Pedro SEO con 86 mil visualizaciones en Instagram: puedes robarle el SEO a tu competencia','Vídeo de Pedro SEO con 40,1 mil visualizaciones en Instagram: posicionarte primero en Google'],
+'img/blog/pedro-seo-video-600000':['Captura en Instagram del vídeo de Pedro SEO «Si quieres que ChatGPT responda», con 125 mil visualizaciones','Captura en TikTok del mismo vídeo de Pedro SEO, con 775,9 mil visualizaciones'],
+'img/blog/pedro-seo-primera-etapa':['Vídeo de Pedro SEO con 196 mil visualizaciones en Instagram','Vídeo de Pedro SEO con 172 mil visualizaciones en Instagram: «dependerá de ti»','Vídeo de Pedro SEO con 90,6 mil visualizaciones en Instagram: tres consejos','Vídeo de Pedro SEO con 47,8 mil visualizaciones en Instagram: escribir artículos o textos para la universidad'],
+'img/blog/caso-exito-gisela-jorba-videos':['Reel de Gisela Jorba con 647 mil visualizaciones','Reel de Gisela Jorba con 274 mil visualizaciones','Reel de Gisela Jorba con 272 mil visualizaciones','Reel de Gisela Jorba con 79,8 mil visualizaciones','Reel de Gisela Jorba con 71,8 mil visualizaciones: los tres mejores eyeliners'],
 'img/blog/caso-exito-marina-garrido-videos':['Vídeo de la clínica con 505,8 mil visualizaciones: dos siliconas que se acumulan en el cabello','Vídeo de la clínica con 176 mil visualizaciones: cosas que frenan la caída del pelo','Vídeo de la clínica con 138 mil visualizaciones: ranking de famosos','Vídeo de la clínica con 130,8 mil visualizaciones: un combinado que los una'],
 'img/blog/caso-exito-mario-cozma-videos':['Reel de Mario Cozma con 3 millones de visualizaciones, grabado en las instalaciones de Iveco','Reel de Mario Cozma con 1,6 millones de visualizaciones: ¿necesitas dinero?','Reel de Mario Cozma con 1,5 millones de visualizaciones: preguntas y respuestas a un conductor experto','Reel de Mario Cozma con 1,3 millones de visualizaciones: con qué remolque se gana más dinero en España'],
 'img/blog/caso-exito-mario-cozma-podcast':['Corte de Rutas de Éxito con 1,5 millones de visualizaciones: ¿qué estás cobrando actualmente?','Corte de Rutas de Éxito con 642 mil visualizaciones: en mi empresa todos cobramos lo mismo','Corte de Rutas de Éxito con 615 mil visualizaciones: precio desorbitado, lo urgente nunca es barato','Corte de Rutas de Éxito con 427 mil visualizaciones: ¿cuánto cobra un conductor de autocar?','Corte de Rutas de Éxito con 425 mil visualizaciones: así funciona la contabilidad en Alemania'],
@@ -120,7 +135,7 @@ GAL_ALTS={'img/blog/caso-exito-gisela-jorba-videos':['Reel de Gisela Jorba con 6
  'Reel de De Profundis con 143 mil visualizaciones: el nitrox sirve para bucear',
  'Reel de De Profundis con 98,2 mil visualizaciones: ranking de mejores lugares para buceo',
  'Reel de De Profundis con 199 mil visualizaciones: gas para buceo']}
-RELATED={'guion-perfecto-instagram.html':['mitos-de-instagram.html','pmu-paradise.html','servicios.html'],'pmu-paradise.html':['gamma-pmu-congress-2026.html','opciones-marketing-2026.html'],'opciones-marketing-2026.html':['mitos-de-instagram.html','de-profundis.html'],'mediatic-cumple-2-anos.html':['de-profundis.html','gamma-pmu-congress-2026.html'],'mitos-de-instagram.html':['de-profundis.html','gamma-pmu-congress-2026.html','guion-perfecto-instagram.html','servicios.html'],'de-profundis.html':['mitos-de-instagram.html','servicios.html'],'gamma-pmu-congress-2026.html':['mitos-de-instagram.html','servicios.html']}
+RELATED={'caso-exito-pedro-seo.html':['caso-exito-gisela-jorba.html','caso-exito-marina-garrido.html','caso-exito-mario-cozma.html'],'guion-perfecto-instagram.html':['mitos-de-instagram.html','pmu-paradise.html','servicios.html'],'pmu-paradise.html':['gamma-pmu-congress-2026.html','opciones-marketing-2026.html'],'opciones-marketing-2026.html':['mitos-de-instagram.html','de-profundis.html'],'mediatic-cumple-2-anos.html':['de-profundis.html','gamma-pmu-congress-2026.html'],'mitos-de-instagram.html':['de-profundis.html','gamma-pmu-congress-2026.html','guion-perfecto-instagram.html','servicios.html'],'de-profundis.html':['mitos-de-instagram.html','servicios.html'],'gamma-pmu-congress-2026.html':['mitos-de-instagram.html','servicios.html']}
 ART_META=dict(sorted(ART_META.items(),key=lambda kv:kv[1].get('date',''),reverse=True))
 def canon(file): return SITE+('/' if file=='index.html' else '/'+file)
 def esc(t): return t.replace('&','&amp;').replace('"','&quot;').replace('<','&lt;')
@@ -155,7 +170,7 @@ def jsonld(file,title,desc):
         graph+= [_vid_ent(t) for t in _E if t.get('uploadDate')]
     elif file in ART_META and not ART_META[file].get('draft'):   # vídeos incrustados en los artículos
         _ap=os.path.join(OUT,'_build','articulos',file)
-        for _i in (re.findall(r'<!--VIDEO:([\w-]+)',open(_ap,'r').read()) if os.path.exists(_ap) else []):
+        for _i in (re.findall(r'<!--VIDEO:([\w-]{11})',open(_ap,'r').read()) if os.path.exists(_ap) else []):
             _t=next((x for x in _E if x['id']==_i and x.get('uploadDate')),None)
             if _t: graph.append(_vid_ent(_t))
         if file=='mitos-de-instagram.html': graph.append(_vid('kX7RTLibXrs','Desmintiendo mitos sobre redes sociales','Vídeo del canal de Mediatic en el que respondemos, según nuestra experiencia, a los mitos y falsas verdades sobre Instagram y redes sociales que más se han extendido.','img/blog/mitos-de-instagram.jpg','2026-04-21T11:56:44-07:00','PT14M26S'))
@@ -281,13 +296,13 @@ RES2=('<section class="reels" id="resultados"><div class="wrap"><div class="reel
  '</div></div></section>')
 # --- HOME: una sola tira con todos los vídeos rotando + "Ver más" → resultados.html ---
 _ALL=[x for t in zip(*_RES_ROWS) for x in t]
-RES2_HOME=('<section class="reels" id="resultados"><div class="wrap"><div class="reels-box">'
- '<div class="reels-head"><div class="tag">Resultados</div>'
- '<h2 class="sec-h">+300 millones de views, <span class="hand">y sumando</span></h2></div>'
+_STATS=('<div class="stats">'
+ '<div class="stat"><b><span class="pl">+</span><span class="cnt" data-to="100">100</span></b><span>Clientes satisfechos</span></div>'
+ '<div class="stat"><b><span class="pl">+</span><span class="cnt" data-to="300" data-suf="M">300M</span></b><span>Millones de views</span></div>'
+ '<div class="stat"><b><span class="pl">+</span><span class="cnt" data-to="30">30</span></b><span>Nichos viralizados</span></div></div>')
+RES2_HOME=('<section class="reels reels-stats" id="resultados"><div class="wrap"><div class="reels-box">'
  '<div class="reels-rows">'+_rrow(_ALL,False).replace('class="rtrack','class="rtrack one')+'</div>'
- '<div class="reels-cta"><a class="btn light" href="resultados.html">Ver más resultados <i>→</i></a>'
- '<a class="btn light" href="index.html#contacto" data-link="resultados">Quiero estos resultados <i>→</i></a></div>'
- '</div></div></section>')
+ '</div>'+_STATS+'<div class="rs-cta"><a class="btn" href="index.html#contacto" data-link="hero">Quiero conseguir estos resultados <i>→</i></a><a class="btn light" href="resultados.html">Ver más resultados <i>→</i></a></div></div></section>')
 # --- Página de resultados (3 tiras, sin cabecera interna) ---
 RES2_PAGE=('<section class="reels" id="resultados"><div class="wrap"><div class="reels-box">'
  '<div class="reels-rows">'+_rrow(_RES_ROWS[0],False)+_rrow(_RES_ROWS[1],True)+_rrow(_RES_ROWS[2],False)+'</div>'
@@ -334,20 +349,16 @@ faq=''.join('<details><summary><h3>%s</h3></summary><p>%s</p></details>'%(q,a) f
 FAQ_BLUE='<section class="faq faq-blue" id="faq"><div class="wrap"><div class="tag">Por si te quedas con dudas</div><h2 class="sec-h">Preguntas frecuentes sobre contenido para redes sociales</h2><p class="sub">Resuelve todas las dudas que tengas.</p><div class="faq-list">'+faq+'</div></div></section>'
 QUOTE=open('/Users/mediaticmac/landing-page/web/_build/quote.html').read()
 # HOME
+MARQ_HOME=MARQ.replace('class="track"','class="track rev"',1)   # la cinta de clientes va a la derecha; la de resultados a la izquierda
 page('index.html','Mediatic | Agencia de contenido orgánico',f'''
 <section class="hero"><div class="wrap hero-wrap">
  <h1>Agencia de <span class="acc">contenido viral</span><br>en Barcelona</h1>
  <p class="hero-sub">Multiplicamos <b class="hl">x5</b> tus <b class="hl">visitas</b> y <b class="hl">leads</b><br>en Instagram con menos de 5h al mes</p>
- <a class="btn" href="index.html#contacto" data-link="hero">Quiero conseguir estos resultados <i>→</i></a></div><canvas id="fly"></canvas></section>
-<section class="team-photo-sec"><div class="wrap"><div class="team-photo-wrap"><div class="team-photo has-img"><img src="img/equipo-foto.jpg" alt="Roger y Esteve, fundadores de Mediatic, con el público tras su ponencia" width="1280" height="720" decoding="async"></div>
- <div class="stats">
-  <div class="stat"><b><span class="pl">+</span><span class="cnt" data-to="100">100</span></b><span>Clientes satisfechos</span></div>
-  <div class="stat"><b><span class="pl">+</span><span class="cnt" data-to="300" data-suf="M">300M</span></b><span>Millones de views</span></div>
-  <div class="stat"><b><span class="pl">+</span><span class="cnt" data-to="30">30</span></b><span>Nichos viralizados</span></div>
- </div></div></div></section>
-<section><div class="wrap"><div class="tag">Clientes</div><h2 class="sec-h" style="margin-bottom:28px">Estos son nuestros <span class="strike">clientes</span> <span class="hand">amigos</span></h2>{MARQ}</div></section>
+ </div><canvas id="fly"></canvas></section>
+{RES2_HOME}
+<section><div class="wrap"><div class="tag">Clientes</div><h2 class="sec-h" style="margin-bottom:28px">Estos son nuestros <span class="strike">clientes</span> <span class="hand">amigos</span></h2>{MARQ_HOME}</div></section>
 {ABOUT}
-{RESULTS_HOME}{RES2_HOME}{TEAM}{REVIEWS}{QUOTE}
+{RESULTS_HOME}{TEAM}{REVIEWS}{QUOTE}
 {FAQ_BLUE}''')
 
 # PÁGINAS NUEVAS: opiniones y resultados (el menú de arriba apunta aquí)
@@ -359,7 +370,7 @@ page('equipo.html','Equipo | Mediatic',head('Equipo','El equipo de <span class="
 
 page('clientes.html','Clientes | Mediatic',head('Clientes','Estos son nuestros <span class="strike">clientes</span> <span class="hand">amigos</span>','Negocios, marcas y creadores que ya crecen en redes sociales con Mediatic.')+f'<section><div class="wrap">{MARQ}</div></section>{RESULTS}{RES2}{REVIEWS}')
 
-BLOG_CATS=['Noticias','Consejos','Casos de éxito','Servicios']
+BLOG_CATS=['Noticias','Consejos','Resultados','Servicios']
 def _post(i):
     return f'<a class="post" href="#" data-cat="{BLOG_CATS[(i-1)%3]}"><div class="th"></div><div class="c">{BLOG_CATS[(i-1)%3]}</div><h3>[Título del artículo {i}]</h3><p class="sub" style="font-size:16px">[Resumen de 1–2 líneas del artículo.]</p></a>'
 def _real(f,a):
@@ -390,15 +401,16 @@ _PD_OUT=('<svg class="pd pd-out" viewBox="0 0 420 340" aria-hidden="true" focusa
 _RES2_CASOS=RES2_PAGE.replace('<div class="wrap"><div class="reels-box">','<div class="wrap">'+_PD_IN+_PD_OUT+_PD_OUT_S+'<div class="reels-box"><div class="reels-head"><h2 class="sec-h">+300 millones de views, <span class="hand">y sumando</span></h2></div>')
 # Tarjetas de casos de éxito (enlazan al artículo del blog). Pack = pendiente de definir por el cliente.
 CASOS_CARD={
- 'caso-exito-manuel-costina.html':('Manuel Costiña','Chef','Próximamente',''),
- 'caso-exito-gisela-jorba.html':('Gisela Jorba','Micropigmentación','De 6.000 a 24.400 seguidores',' dentro de su nicho, con la lista de espera duplicada y más de 50 ventas en el lanzamiento de su formación online.'),
- 'caso-exito-marina-garrido.html':('Dra. Marina Garrido','Clínica de injertos capilares','+1,2M de visualizaciones en 3 meses',' con 12 vídeos y menos de dos horas al mes de dedicación.'),
- 'caso-exito-mario-cozma.html':('Mario Cozma','Transporte y logística','De 34.000 a 77.700 seguidores',' en Instagram y el canal de YouTube duplicado: el referente del transporte en redes.'),
- 'de-profundis.html':('De Profundis','Buceo técnico','De menos de 1.000 a más de 6.200 seguidores',' y clientes cada día, con menos de 6 horas de dedicación cada tres meses.'),
+ 'caso-exito-manuel-costina.html':('Manuel Costiña','Chef','**Próximamente**',''),
+ 'caso-exito-gisela-jorba.html':('Gisela Jorba','Micropigmentación','**Ha duplicado su lista de espera**',' en su centro, pasando de **6 meses a 1 año**.'),
+ 'caso-exito-marina-garrido.html':('Dra. Marina Garrido','Clínica de injertos capilares','**Capta clientes**',' para su clínica **a través de redes** con menos de 2 h al mes.'),
+ 'caso-exito-mario-cozma.html':('Mario Cozma','Transporte y logística','De 34.000 a **más de 77.000 seguidores** en Instagram',' y posicionado como **referente del transporte en redes**.'),
+ 'caso-exito-pedro-seo.html':('Pedro SEO','SEO y marketing','Capta **más clientes para su agencia** y más alumnos para su formación',' gracias a nuestro contenido, **con solo 6 horas al mes**.'),
+ 'de-profundis.html':('De Profundis','Buceo técnico','**Recibe clientes** cada día desde Instagram',' **con menos de 2 horas al mes**.'),
 }
-CASOS_PACK={'caso-exito-manuel-costina.html':'Pack Pro','caso-exito-gisela-jorba.html':'Pack Básico','caso-exito-marina-garrido.html':'Pack Starter','caso-exito-mario-cozma.html':'Pack Pro','de-profundis.html':'Pack Starter'}
-CASOS_USER={'caso-exito-gisela-jorba.html':'@giselajorba_micropigmentacion','caso-exito-marina-garrido.html':'@dra.marinagarrido','caso-exito-mario-cozma.html':'@mcozma1','de-profundis.html':'@de_profundis_ig'}   # Manuel Costiña: pendiente de usuario
-CASOS_AVATAR={'caso-exito-manuel-costina.html':'img/clientes/c01.jpg','caso-exito-gisela-jorba.html':'img/testimonios/gisela.png','caso-exito-marina-garrido.html':'img/testimonios/marina.png','caso-exito-mario-cozma.html':'img/testimonios/mario.png','de-profundis.html':'img/testimonios/deprofundis.png'}
+CASOS_PACK={'caso-exito-pedro-seo.html':'Pack personalizado','caso-exito-manuel-costina.html':'Pack Pro','caso-exito-gisela-jorba.html':'Pack Básico','caso-exito-marina-garrido.html':'Pack Starter','caso-exito-mario-cozma.html':'Pack Pro','de-profundis.html':'Pack Starter'}
+CASOS_USER={'caso-exito-pedro-seo.html':'@pedroseo_','caso-exito-gisela-jorba.html':'@giselajorba_micropigmentacion','caso-exito-marina-garrido.html':'@dra.marinagarrido','caso-exito-mario-cozma.html':'@mcozma1','de-profundis.html':'@de_profundis_ig'}   # Manuel Costiña: pendiente de usuario
+CASOS_AVATAR={'caso-exito-pedro-seo.html':'img/testimonios/pedro.png','caso-exito-manuel-costina.html':'img/clientes/c01.jpg','caso-exito-gisela-jorba.html':'img/testimonios/gisela.png','caso-exito-marina-garrido.html':'img/testimonios/marina.png','caso-exito-mario-cozma.html':'img/testimonios/mario.png','de-profundis.html':'img/testimonios/deprofundis.png'}
 def _ccard(f,a):
     n,nicho,hb,hr=CASOS_CARD[f]
     pk=CASOS_PACK.get(f,'Pack por definir')
@@ -406,7 +418,7 @@ def _ccard(f,a):
     av=CASOS_AVATAR.get(f,'')
     avh=('<img src="%s" alt="%s" width="64" height="64" loading="lazy">'%(av,esc(n))) if av and os.path.exists(os.path.join(OUT,av)) else '<span class="rinit" aria-hidden="true">%s</span>'%''.join(w[0] for w in n.split()[:2]).upper()
     return ('<a class="ccard" href="%s"><div class="cc-top"><div class="rauth">%s<div class="rwho"><h3>%s</h3>%s</div></div><span class="cc-pack">%s</span></div><div class="cc-photo">%s</div>'
-            '<div class="cc-body"><span class="cc-niche">%s</span><p class="cc-hl"><b>%s</b>%s</p></div></a>')%(f,avh,esc(n),('<small>%s</small>'%esc(CASOS_USER[f])) if f in CASOS_USER else '',esc(pk),ph,esc(nicho),esc(hb),esc(hr))
+            '<div class="cc-body"><span class="cc-niche">%s</span><p class="cc-hl">%s</p></div></a>')%(f,avh,esc(n),('<small>%s</small>'%esc(CASOS_USER[f])) if f in CASOS_USER else '',esc(pk),ph,esc(nicho),re.sub(r'\*\*(.+?)\*\*',r'<b>\1</b>',esc(hb+hr)))
 _CASOS=''.join(_ccard(f,a) for f,a in ART_META.items() if f in CASOS_CARD)
 page('resultados.html','Casos de éxito | Mediatic','<section class="page-head ph-center"><div class="wrap"><div class="tag">Casos de éxito de Mediatic</div><h1>Nuestros clientes generan <span class="pen">más negocio</span> con contenido viral</h1><p class="sub">Con estrategias de contenido personalizadas, guiones validados y vídeos virales que atraen público cualificado y convierten tus redes en una fuente constante de clientes.</p></div></section>'+_RES2_CASOS+'<section class="casos-sec"><div class="wrap"><div class="casos-intro"><p class="ci-eyebrow">Datos reales de nuestros clientes</p><h2 class="sec-h">Casos de éxito de Mediatic</h2><p class="ci-sub">Hemos ayudado a negocios y marcas personales a aumentar las ventas de su negocio, a multiplicar sus visitas, sus seguidores y sus clientes con contenido orgánico. Estos son algunos de los resultados.</p></div><div class="ccards">'+_CASOS+'</div><div class="more-cta ccards-more" hidden><button type="button" class="btn">Ver más casos <i>→</i></button></div></div></section>'+QUOTE)
 
@@ -445,7 +457,7 @@ for _f,_a in ART_META.items():
     _aside=('<aside class="aside" aria-label="Contacto"><div class="aside-in">'
       '<div class="acta hl"><span>Crece con nosotros</span><h2>¿Hablamos de tu proyecto?</h2><p>Te decimos si podemos multiplicar por 5 tus visitas y leads con menos de 5 horas al mes.</p><a class="btn" href="index.html#contacto" data-link="blog-lateral">Agendar diagnóstico <i>→</i></a></div>'
       +_more+'</div></aside>')
-    _head=('<section class="page-head art-head"><div class="wrap"><nav class="crumbs" aria-label="Migas de pan"><a href="index.html">Home</a><i>›</i><a href="blog.html">Blog</a><i>›</i><span aria-current="page">%s</span></nav><h1>%s</h1><p class="byline">%s</p></div></section>'%(_a['h1'],_a['h1'],(_a['cat']+' · Próximamente'+((' · '+_a['fecha']) if _a.get('fecha') else '')) if _a.get('draft') else '%s · Por el equipo de <b>Mediatic</b> · <time datetime="%s">%s</time> · %d min de lectura'%(_a['cat'],_a['date'],_a['fecha'],_a['mins'])))
+    _head=('<section class="page-head art-head"><div class="wrap"><nav class="crumbs" aria-label="Migas de pan"><a href="index.html">Home</a><i>›</i><a href="blog.html">Blog</a><i>›</i><span aria-current="page">%s</span></nav><h1>%s</h1>%s<p class="byline">%s</p></div></section>'%(_a['h1'],_a['h1'],('<p class="art-sub">%s</p>'%_a['sub'] if _a.get('sub') else ''),(_a['cat']+' · Próximamente'+((' · '+_a['fecha']) if _a.get('fecha') else '')) if _a.get('draft') else '%s · Por el equipo de <b>Mediatic</b> · <time datetime="%s">%s</time> · %d min de lectura'%(_a['cat'],_a['date'],_a['fecha'],_a['mins'])))
     page(_f,_a['h1'],_head+'<section class="art"><div class="wrap art-grid"><article class="prose">'+_body+'</article>'+_aside+'</div></section>'+seguir(_f,ART_META,RELATED,OUT))
 
 

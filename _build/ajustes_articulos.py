@@ -70,3 +70,40 @@ REEMPLAZOS_MD={
 # Pies de foto (y autor) por artículo e imagen (clave: nombre de archivo sin extensión) y fotos que de momento no se publican
 PIES={'pmu-paradise':{'mediatic-pmu-paradise-2026-ponencia':('Roger y Esteve durante la ponencia «Revive tu Instagram» en PMU Paradise 2026 (Tenerife)','Javi Martínez')}}
 OMITIR_ALT={'pmu-paradise':['Taller de guiones para Instagram'],'guion-perfecto-instagram':['Cómo validar una idea de guion','Estructura del guion perfecto']}
+
+# ---------- Caso de éxito: Pedro SEO ----------
+REEMPLAZOS_MD['caso-exito-pedro-seo']={
+ 'URL DEL VÍDEO DETRÁS DE CÁMARAS':'https://youtu.be/CkqyKFxKMN8',
+ 'URL DEL VÍDEO DE ANÁLISIS DEL VÍDEO DE 600.000':'https://youtu.be/QYfZ7u2Rshc',
+ 'URL DEL VÍDEO DE ANÁLISIS DE LA ESTRATEGIA':'https://youtu.be/X-nsWy3SqyY',
+ 'más conocido en redes como Pedro SEO':'más conocido en redes como [Pedro SEO](https://www.instagram.com/pedroseo_/)',
+ '(URL DE LA ENTREVISTA)':'(https://youtu.be/laTL0mnr7C8)',
+ '— URL DE LA ENTREVISTA]':'— https://youtu.be/laTL0mnr7C8]',
+ 'de una micropigmentadora como Gisela Jorba a una escuela de buceo técnico como De Profundis':'de una micropigmentadora como [Gisela Jorba](https://www.mediatic.io/blog/caso-exito-gisela-jorba) a una escuela de buceo técnico como [De Profundis](https://www.mediatic.io/casos-de-exito/de-profundis)',
+}
+AJUSTES['caso-exito-pedro-seo']=[
+ ('<nav class="toc"','<figure class="photo cover wide"><img src="img/blog/caso-exito-pedro-seo.jpg" alt="Pedro SEO, a la izquierda, junto a Esteve y Roger, fundadores de Mediatic, sentados a una mesa frente a un gran ventanal" width="1400" height="933" loading="eager" decoding="async"><figcaption>Pedro SEO (izquierda), con Esteve y Roger (derecha), tras grabar la entrevista en la que valora su experiencia con Mediatic.</figcaption></figure>\n<nav class="toc"'),
+]
+
+PIES['caso-exito-pedro-seo']={
+ 'pedro-seo-video-600000':('El vídeo de Pedro SEO que superó las 900.000 visualizaciones, en Instagram (izquierda) y en TikTok (derecha).',''),
+ 'pedro-seo-primera-etapa':('Otros vídeos de la primera etapa, con entre 47 mil y 196 mil visualizaciones en Instagram.',''),
+ 'pedro-seo-videos-seo':('Vídeos de Pedro SEO sobre posicionamiento web en Instagram, con entre 40 mil y 163 mil visualizaciones.',''),
+}
+
+REEMPLAZOS_MD['caso-exito-pedro-seo']['[Imagen: capturas del vídeo de más de 600.000 visualizaciones de Pedro SEO en Instagram y TikTok — alt="Vídeo de Pedro SEO con más de 600.000 visualizaciones entre Instagram y TikTok"]']='[Imagen: capturas del vídeo de más de 600.000 visualizaciones de Pedro SEO en Instagram y TikTok — alt="Vídeo de Pedro SEO con más de 600.000 visualizaciones entre Instagram y TikTok"]\n\n[Imagen: capturas de otros vídeos destacados de la primera etapa — alt="Otros vídeos de Pedro SEO con entre 47 mil y 196 mil visualizaciones en Instagram"]'
+REEMPLAZOS_MD['caso-exito-pedro-seo']['| Primera etapa | pedro-seo-video-600000.webp | Vídeo de Pedro SEO con más de 600.000 visualizaciones entre Instagram y TikTok |']='| Primera etapa | pedro-seo-video-600000.webp | Vídeo de Pedro SEO con más de 600.000 visualizaciones entre Instagram y TikTok |\n| Primera etapa | pedro-seo-primera-etapa.webp | Otros vídeos de Pedro SEO con entre 47 mil y 196 mil visualizaciones en Instagram |'
+
+REEMPLAZOS_MD['caso-exito-pedro-seo']['superó las **600.000 visualizaciones**: 125.000 en Instagram y 487.000 en TikTok']='superó las **900.000 visualizaciones**: 125.000 en Instagram y 775.900 en TikTok'
+
+REEMPLAZOS_MD['caso-exito-pedro-seo']['Pedro Serrano, más conocido en redes como [Pedro SEO](https://www.instagram.com/pedroseo_/), no necesitaba más seguidores. Con más de 241.000 en Instagram y más de 237.000 suscriptores en YouTube, ya era uno de los divulgadores de referencia del marketing digital en España. Lo que buscaba era otra cosa: recuperar su tiempo, dar una imagen más profesional y, sobre todo, que su contenido generara negocio.']='Cuando Pedro, más conocido en redes como [Pedro SEO](https://www.instagram.com/pedroseo_/), llegó a nosotros, no necesitaba más seguidores. Lo que necesitaba era un contenido que se viera profesional para atraer a clientes hacia su agencia y su negocio.'
+REEMPLAZOS_MD['caso-exito-pedro-seo']['En este caso de éxito explicamos cómo hemos trabajado su estrategia en dos etapas, primero buscando alcance y después centrándonos en su nicho, y qué ha supuesto para su negocio.']='En este artículo explicamos cómo hemos trabajado su estrategia, el antes y el después.'
+REEMPLAZOS_MD['caso-exito-pedro-seo']['Su marca personal es el principal motor de su negocio, que se apoya en dos grandes vías:']='Su marca personal es el principal motor de su negocio, que se apoya en dos grandes vías de monetización:'
+REEMPLAZOS_MD['caso-exito-pedro-seo']['- **Clientes para la agencia.** Palo Seco trabaja con más de 30 clientes, y la mayoría conocieron a Pedro a través de las redes sociales.']='- **Clientes para la agencia.** En Palo Seco trabajan con más de 30 clientes, y la mayoría llegaron a la agencia o la conocieron gracias a las redes sociales de Pedro.'
+REEMPLAZOS_MD['caso-exito-pedro-seo']['A ellas se suman los patrocinios, las ponencias y eventos propios como La Sociedad Secreta del Marketing.']='A estas dos vías de monetización se suman los patrocinios, las ponencias y los eventos propios, como La Sociedad Secreta del Marketing.'
+REEMPLAZOS_MD['caso-exito-pedro-seo']['Hemos vivido con él dos etapas muy distintas, y seguimos grabando juntos allí donde esté. Puedes ver cómo son esas jornadas en [este vídeo detrás de cámaras](https://youtu.be/CkqyKFxKMN8).']='Hemos vivido con él dos etapas muy distintas y seguimos grabando juntos allí donde esté. En nuestro canal de YouTube tenemos dos vídeos «detrás de cámaras» en los que mostramos qué hay detrás de una grabación con Pedro. [En el primero](https://youtu.be/G-UIbIXb3qw), explicamos cómo fue su traslado de Barcelona a Andorra y cómo grabamos allí con él. [En el segundo](https://youtu.be/CkqyKFxKMN8), viajamos con él a Galicia para grabar un vídeo para su canal.'
+
+# Citas de Pedro: mismo estilo destacado (bloque azul) que en el resto de casos de éxito
+AJUSTES['caso-exito-pedro-seo']+=[('<blockquote class="pq">','<blockquote class="pq hl">')]*5
+
+REEMPLAZOS_MD['caso-exito-pedro-seo']['## Primera etapa: contenido para un público amplio']='## Contenido en los primeros meses\n\nEn un periodo tan largo como casi dos años, las estrategias pueden cambiar mucho. Y es lo normal: como agencia, es nuestra responsabilidad ir a por el objetivo que quiere el cliente y moldear la estrategia cuando ese objetivo cambia.\n\nCon Pedro ha pasado exactamente eso. Al principio el objetivo era el alcance, y el contenido se pensaba para conseguirlo. Con el tiempo el objetivo pasó a ser el negocio, así que el contenido cambió. Y con él, el público al que nos dirigimos: de una audiencia amplia, interesada en el mundo digital en general, a un avatar mucho más concreto, el de las empresas y personas interesadas en el SEO, potenciales clientes de su agencia y alumnos de su formación.'
