@@ -1310,3 +1310,12 @@ section.reels{overflow-x:clip}
 .reels-stats ~ .greviews{padding:34px 0}
 .reels-stats ~ .quote-sec{padding-top:40px}
 .about-photo.has-img img{object-position:54% 56%}
+
+/* «Sigue leyendo» (lateral): subtítulo del artículo bajo su título */
+.acta .anx span{display:block;font-size:13.5px;line-height:1.35;font-weight:400;letter-spacing:0;text-transform:none;color:var(--muted);margin-top:5px}
+
+/* Recuadro «Tip» (azul, sin comillas, con minititulo encima) */
+.prose .tipbox{background:var(--blue);color:#fff;border-radius:22px;padding:22px 28px 22px;margin:30px 0;clear:both}
+.prose .tipbox b{display:block;font-family:'SF Pro Display',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.8;margin-bottom:8px}
+.prose .tipbox p{margin:0;color:#fff;font-size:clamp(16px,1.6vw,18px);line-height:1.5;font-weight:500}
+@media(max-width:700px){.prose .tipbox{padding:20px;margin:24px 0}}

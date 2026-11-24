@@ -65,7 +65,7 @@ ART_META['de-profundis.html']=dict(
  h1='Caso de éxito: De Profundis',
  sub='Recibe clientes cada día desde Instagram con menos de 2 horas al mes',
  cat='Resultados',date='2026-04-14',fecha='14 de abril de 2026',mins=6,
- thumb='img/blog/de-profundis-portada.jpg',
+ thumb='img/blog/de-profundis-portada-v2.jpg',
  excerpt='Recibe clientes cada día desde Instagram con menos de 2 horas al mes.')
 def _draft(f,h1,cat,desc,date=None,fecha=None):
     d=dict(title=h1+' | Mediatic',desc=desc,h1=h1,cat=cat,draft=True,thumb='img/blog/%s.jpg'%f[:-5],excerpt='Próximamente.')
@@ -107,6 +107,22 @@ ART_META.update({
   cat='Resultados',date='2026-07-12',fecha='12 de julio de 2026',mins=8,
   thumb='img/blog/caso-exito-pedro-seo.jpg',
   excerpt='Capta más clientes para su agencia y más alumnos para su formación gracias a nuestro contenido, con solo 6 horas al mes.'),
+ 'caso-exito-sosa-ingredients.html':dict(
+  title='Caso de éxito: Sosa Ingredients (+10.000 seguidores)',
+  desc='Así cambiamos la comunicación corporativa de Sosa Ingredients por vídeos que aportan valor y la llevamos de 90.000 a 100.000 seguidores en tres meses.',
+  h1='Caso de éxito: Sosa Ingredients',
+  sub='Dejamos atrás la comunicación corporativa y crecimos +10.000 seguidores en 3 meses',
+  cat='Resultados',date='2026-06-16',fecha='16 de junio de 2026',mins=7,
+  thumb='img/blog/caso-exito-sosa-ingredients.jpg',
+  excerpt='Dejamos atrás la comunicación corporativa y crecimos +10.000 seguidores en 3 meses.'),
+ 'caso-exito-la-school-of-dance.html':dict(
+  title='Caso de éxito: La School of Dance (+8 millones de visitas)',
+  desc='Así llevamos el contenido de La School of Dance, escuela de baile de Manresa, a más de 8 millones de visualizaciones en dos meses en Instagram y TikTok.',
+  h1='Caso de éxito: La School of Dance',
+  sub='Consiguimos +8 millones de visualizaciones en los primeros 2 meses',
+  cat='Resultados',date='2026-06-17',fecha='17 de junio de 2026',mins=8,
+  thumb='img/blog/caso-exito-la-school-of-dance.jpg',
+  excerpt='Consiguimos +8 millones de visualizaciones en los primeros 2 meses.'),
  'guion-perfecto-instagram.html':dict(
   title='Cómo escribir el guion perfecto para Instagram: el proceso paso a paso',
   desc='Aprende a escribir el guion perfecto para Instagram: cómo encontrar ideas, validarlas, elegir el formato y adaptar tu guion para que funcione. Paso a paso.',
@@ -122,7 +138,11 @@ ART_META.update({
   thumb='img/blog/servicios-portada.jpg',
   excerpt='Qué hacemos, cómo trabajamos y para quién es nuestro servicio de creación de contenido para redes sociales.'),
 })
-GAL_ALTS={'img/blog/pedro-seo-videos-seo':['Vídeo de Pedro SEO con 163 mil visualizaciones en Instagram sobre el botón de buscar de Google','Vídeo de Pedro SEO con 89 mil visualizaciones en Instagram: así es como puedes posicionarte','Vídeo de Pedro SEO con 86 mil visualizaciones en Instagram: puedes robarle el SEO a tu competencia','Vídeo de Pedro SEO con 40,1 mil visualizaciones en Instagram: posicionarte primero en Google'],
+GAL_ALTS={'img/blog/sosa-ingredients-videos-ahora':['Vídeo de Sosa Ingredients en Instagram con 238 mil visualizaciones: azúcares','Vídeo de Sosa Ingredients en Instagram con 61 mil visualizaciones: la inulina','Vídeo de Sosa Ingredients en Instagram con 49,2 mil visualizaciones: qué hace cada ingrediente','Vídeo de Sosa Ingredients en Instagram con 33 mil visualizaciones: tus croquetas','Vídeo de Sosa Ingredients en Instagram con 20,8 mil visualizaciones: la crema pastelera'],
+'img/blog/la-school-of-dance-video-viral':['Captura en Instagram del vídeo del paso viral de La School of Dance, con 787 mil visualizaciones','Captura en TikTok del mismo vídeo de La School of Dance, con 3,2 millones de visualizaciones'],
+'img/blog/la-school-of-dance-instagram':['Vídeo de La School of Dance en Instagram con 235 mil visualizaciones','Vídeo de La School of Dance en Instagram con 168 mil visualizaciones: gimnasio contra baile','Vídeo de La School of Dance en Instagram con 138 mil visualizaciones: un muy buen bailarín','Vídeo de La School of Dance en Instagram con 112 mil visualizaciones','Vídeo de La School of Dance en Instagram con 63 mil visualizaciones: hábitos para mejorar como bailarín'],
+'img/blog/la-school-of-dance-tiktok':['Vídeo de La School of Dance en TikTok con 153,7 mil visualizaciones: «No vas a bailar»','Vídeo de La School of Dance en TikTok con 114,8 mil visualizaciones: «iets frans»','Vídeo de La School of Dance en TikTok con 87,9 mil visualizaciones: un muy buen bailarín','Vídeo de La School of Dance en TikTok con 64,4 mil visualizaciones: gimnasio contra baile','Vídeo de La School of Dance en TikTok con 46 mil visualizaciones: aprende este truco'],
+'img/blog/pedro-seo-videos-seo':['Vídeo de Pedro SEO con 163 mil visualizaciones en Instagram sobre el botón de buscar de Google','Vídeo de Pedro SEO con 89 mil visualizaciones en Instagram: así es como puedes posicionarte','Vídeo de Pedro SEO con 86 mil visualizaciones en Instagram: puedes robarle el SEO a tu competencia','Vídeo de Pedro SEO con 40,1 mil visualizaciones en Instagram: posicionarte primero en Google'],
 'img/blog/pedro-seo-video-600000':['Captura en Instagram del vídeo de Pedro SEO «Si quieres que ChatGPT responda», con 125 mil visualizaciones','Captura en TikTok del mismo vídeo de Pedro SEO, con 775,9 mil visualizaciones'],
 'img/blog/pedro-seo-primera-etapa':['Vídeo de Pedro SEO con 196 mil visualizaciones en Instagram','Vídeo de Pedro SEO con 172 mil visualizaciones en Instagram: «dependerá de ti»','Vídeo de Pedro SEO con 90,6 mil visualizaciones en Instagram: tres consejos','Vídeo de Pedro SEO con 47,8 mil visualizaciones en Instagram: escribir artículos o textos para la universidad'],
 'img/blog/caso-exito-gisela-jorba-videos':['Reel de Gisela Jorba con 647 mil visualizaciones','Reel de Gisela Jorba con 274 mil visualizaciones','Reel de Gisela Jorba con 272 mil visualizaciones','Reel de Gisela Jorba con 79,8 mil visualizaciones','Reel de Gisela Jorba con 71,8 mil visualizaciones: los tres mejores eyeliners'],
@@ -135,7 +155,7 @@ GAL_ALTS={'img/blog/pedro-seo-videos-seo':['Vídeo de Pedro SEO con 163 mil visu
  'Reel de De Profundis con 143 mil visualizaciones: el nitrox sirve para bucear',
  'Reel de De Profundis con 98,2 mil visualizaciones: ranking de mejores lugares para buceo',
  'Reel de De Profundis con 199 mil visualizaciones: gas para buceo']}
-RELATED={'caso-exito-pedro-seo.html':['caso-exito-gisela-jorba.html','caso-exito-marina-garrido.html','caso-exito-mario-cozma.html'],'guion-perfecto-instagram.html':['mitos-de-instagram.html','pmu-paradise.html','servicios.html'],'pmu-paradise.html':['gamma-pmu-congress-2026.html','opciones-marketing-2026.html'],'opciones-marketing-2026.html':['mitos-de-instagram.html','de-profundis.html'],'mediatic-cumple-2-anos.html':['de-profundis.html','gamma-pmu-congress-2026.html'],'mitos-de-instagram.html':['de-profundis.html','gamma-pmu-congress-2026.html','guion-perfecto-instagram.html','servicios.html'],'de-profundis.html':['mitos-de-instagram.html','servicios.html'],'gamma-pmu-congress-2026.html':['mitos-de-instagram.html','servicios.html']}
+RELATED={'caso-exito-sosa-ingredients.html':['de-profundis.html','caso-exito-mario-cozma.html','caso-exito-pedro-seo.html'],'caso-exito-la-school-of-dance.html':['de-profundis.html','caso-exito-gisela-jorba.html','caso-exito-pedro-seo.html'],'caso-exito-pedro-seo.html':['caso-exito-gisela-jorba.html','caso-exito-marina-garrido.html','caso-exito-mario-cozma.html'],'guion-perfecto-instagram.html':['mitos-de-instagram.html','pmu-paradise.html','servicios.html'],'pmu-paradise.html':['gamma-pmu-congress-2026.html','opciones-marketing-2026.html'],'opciones-marketing-2026.html':['mitos-de-instagram.html','de-profundis.html'],'mediatic-cumple-2-anos.html':['de-profundis.html','gamma-pmu-congress-2026.html'],'mitos-de-instagram.html':['de-profundis.html','gamma-pmu-congress-2026.html','guion-perfecto-instagram.html','servicios.html'],'de-profundis.html':['mitos-de-instagram.html','servicios.html'],'gamma-pmu-congress-2026.html':['mitos-de-instagram.html','servicios.html']}
 ART_META=dict(sorted(ART_META.items(),key=lambda kv:kv[1].get('date',''),reverse=True))
 def canon(file): return SITE+('/' if file=='index.html' else '/'+file)
 def esc(t): return t.replace('&','&amp;').replace('"','&quot;').replace('<','&lt;')
@@ -406,11 +426,13 @@ CASOS_CARD={
  'caso-exito-marina-garrido.html':('Dra. Marina Garrido','Clínica de injertos capilares','**Capta clientes**',' para su clínica **a través de redes** con menos de 2 h al mes.'),
  'caso-exito-mario-cozma.html':('Mario Cozma','Transporte y logística','De 34.000 a **más de 77.000 seguidores** en Instagram',' y posicionado como **referente del transporte en redes**.'),
  'caso-exito-pedro-seo.html':('Pedro SEO','SEO y marketing','Capta **más clientes para su agencia** y más alumnos para su formación',' gracias a nuestro contenido, **con solo 6 horas al mes**.'),
+ 'caso-exito-sosa-ingredients.html':('Sosa Ingredients','Ingredientes para cocina','**Dejamos atrás la comunicación corporativa**',' y crecimos **+10.000 seguidores en 3 meses**.'),
+ 'caso-exito-la-school-of-dance.html':('La School of Dance','Escuela de baile','Consiguimos **+8 millones de visualizaciones**',' en los **primeros 2 meses**.'),
  'de-profundis.html':('De Profundis','Buceo técnico','**Recibe clientes** cada día desde Instagram',' **con menos de 2 horas al mes**.'),
 }
-CASOS_PACK={'caso-exito-pedro-seo.html':'Pack personalizado','caso-exito-manuel-costina.html':'Pack Pro','caso-exito-gisela-jorba.html':'Pack Básico','caso-exito-marina-garrido.html':'Pack Starter','caso-exito-mario-cozma.html':'Pack Pro','de-profundis.html':'Pack Starter'}
-CASOS_USER={'caso-exito-pedro-seo.html':'@pedroseo_','caso-exito-gisela-jorba.html':'@giselajorba_micropigmentacion','caso-exito-marina-garrido.html':'@dra.marinagarrido','caso-exito-mario-cozma.html':'@mcozma1','de-profundis.html':'@de_profundis_ig'}   # Manuel Costiña: pendiente de usuario
-CASOS_AVATAR={'caso-exito-pedro-seo.html':'img/testimonios/pedro.png','caso-exito-manuel-costina.html':'img/clientes/c01.jpg','caso-exito-gisela-jorba.html':'img/testimonios/gisela.png','caso-exito-marina-garrido.html':'img/testimonios/marina.png','caso-exito-mario-cozma.html':'img/testimonios/mario.png','de-profundis.html':'img/testimonios/deprofundis.png'}
+CASOS_PACK={'caso-exito-sosa-ingredients.html':'Pack personalizado','caso-exito-la-school-of-dance.html':'Pack Básico','caso-exito-pedro-seo.html':'Pack personalizado','caso-exito-manuel-costina.html':'Pack Pro','caso-exito-gisela-jorba.html':'Pack Básico','caso-exito-marina-garrido.html':'Pack Starter','caso-exito-mario-cozma.html':'Pack Pro','de-profundis.html':'Pack Starter'}
+CASOS_USER={'caso-exito-sosa-ingredients.html':'@sosaingredients','caso-exito-la-school-of-dance.html':'@laschoolofdance','caso-exito-pedro-seo.html':'@pedroseo_','caso-exito-gisela-jorba.html':'@giselajorba_micropigmentacion','caso-exito-marina-garrido.html':'@dra.marinagarrido','caso-exito-mario-cozma.html':'@mcozma1','de-profundis.html':'@de_profundis_ig'}   # Manuel Costiña: pendiente de usuario
+CASOS_AVATAR={'caso-exito-sosa-ingredients.html':'img/testimonios/sosa.png','caso-exito-la-school-of-dance.html':'img/testimonios/laschool.png','caso-exito-pedro-seo.html':'img/testimonios/pedro.png','caso-exito-manuel-costina.html':'img/clientes/c01.jpg','caso-exito-gisela-jorba.html':'img/testimonios/gisela.png','caso-exito-marina-garrido.html':'img/testimonios/marina.png','caso-exito-mario-cozma.html':'img/testimonios/mario.png','de-profundis.html':'img/testimonios/deprofundis.png'}
 def _ccard(f,a):
     n,nicho,hb,hr=CASOS_CARD[f]
     pk=CASOS_PACK.get(f,'Pack por definir')
@@ -419,7 +441,10 @@ def _ccard(f,a):
     avh=('<img src="%s" alt="%s" width="64" height="64" loading="lazy">'%(av,esc(n))) if av and os.path.exists(os.path.join(OUT,av)) else '<span class="rinit" aria-hidden="true">%s</span>'%''.join(w[0] for w in n.split()[:2]).upper()
     return ('<a class="ccard" href="%s"><div class="cc-top"><div class="rauth">%s<div class="rwho"><h3>%s</h3>%s</div></div><span class="cc-pack">%s</span></div><div class="cc-photo">%s</div>'
             '<div class="cc-body"><span class="cc-niche">%s</span><p class="cc-hl">%s</p></div></a>')%(f,avh,esc(n),('<small>%s</small>'%esc(CASOS_USER[f])) if f in CASOS_USER else '',esc(pk),ph,esc(nicho),re.sub(r'\*\*(.+?)\*\*',r'<b>\1</b>',esc(hb+hr)))
-_CASOS=''.join(_ccard(f,a) for f,a in ART_META.items() if f in CASOS_CARD)
+# Orden de las tarjetas de «Casos de éxito»: manual (no por fecha). Para cambiarlo, reordena esta lista; los casos que no estén aquí salen al final, por fecha.
+CASOS_ORDEN=['caso-exito-manuel-costina.html','caso-exito-gisela-jorba.html','caso-exito-marina-garrido.html','caso-exito-mario-cozma.html','caso-exito-pedro-seo.html','de-profundis.html']
+_casos_ord=sorted([(f,a) for f,a in ART_META.items() if f in CASOS_CARD],key=lambda fa:(CASOS_ORDEN.index(fa[0]) if fa[0] in CASOS_ORDEN else len(CASOS_ORDEN)))
+_CASOS=''.join(_ccard(f,a) for f,a in _casos_ord)
 page('resultados.html','Casos de éxito | Mediatic','<section class="page-head ph-center"><div class="wrap"><div class="tag">Casos de éxito de Mediatic</div><h1>Nuestros clientes generan <span class="pen">más negocio</span> con contenido viral</h1><p class="sub">Con estrategias de contenido personalizadas, guiones validados y vídeos virales que atraen público cualificado y convierten tus redes en una fuente constante de clientes.</p></div></section>'+_RES2_CASOS+'<section class="casos-sec"><div class="wrap"><div class="casos-intro"><p class="ci-eyebrow">Datos reales de nuestros clientes</p><h2 class="sec-h">Casos de éxito de Mediatic</h2><p class="ci-sub">Hemos ayudado a negocios y marcas personales a aumentar las ventas de su negocio, a multiplicar sus visitas, sus seguidores y sus clientes con contenido orgánico. Estos son algunos de los resultados.</p></div><div class="ccards">'+_CASOS+'</div><div class="more-cta ccards-more" hidden><button type="button" class="btn">Ver más casos <i>→</i></button></div></div></section>'+QUOTE)
 
 # ---- artículos del blog ----
@@ -452,7 +477,7 @@ for _f,_a in ART_META.items():
     _body=re.sub(r'<!--PHOTO:([^>]*?)-->',_photo,_body)
     _ks=list(ART_META);_i=_ks.index(_f)
     def _lk(k,lab):
-        a2=ART_META[k];return '<a class="anx" href="%s"><small>%s</small><b>%s</b>%s</a>'%(k,lab,a2['h1'],'<em>Próximamente</em>' if a2.get('draft') else '')
+        a2=ART_META[k];return '<a class="anx" href="%s"><small>%s</small><b>%s</b>%s%s</a>'%(k,lab,a2['h1'],('<span>%s</span>'%a2['sub']) if a2.get('sub') else '','<em>Próximamente</em>' if a2.get('draft') else '')
     _more=('<div class="acta nav"><span>Sigue leyendo</span>'+(_lk(_ks[_i-1],'← Más reciente') if _i>0 else '')+(_lk(_ks[_i+1],'Más antiguo →') if _i<len(_ks)-1 else '')+'</div>') if len(_ks)>1 else ''
     _aside=('<aside class="aside" aria-label="Contacto"><div class="aside-in">'
       '<div class="acta hl"><span>Crece con nosotros</span><h2>¿Hablamos de tu proyecto?</h2><p>Te decimos si podemos multiplicar por 5 tus visitas y leads con menos de 5 horas al mes.</p><a class="btn" href="index.html#contacto" data-link="blog-lateral">Agendar diagnóstico <i>→</i></a></div>'

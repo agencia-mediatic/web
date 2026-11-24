@@ -33,6 +33,8 @@ INTERNAL={
  'https://www.mediatic.io/contacto-guion-perfecto-instagram':'index.html#contacto" data-link="blog-guion-perfecto-instagram',
  'https://www.mediatic.io/contacto':'index.html#contacto" data-link="blog-articulo',
  'https://www.mediatic.io/?utm_source=blog&utm_medium=articulo&utm_campaign=caso-pedro-seo#contacto':'index.html#contacto" data-link="blog-caso-exito-pedro-seo',
+ 'https://www.mediatic.io/?utm_source=blog&utm_medium=articulo&utm_campaign=caso-school-of-dance#contacto':'index.html#contacto" data-link="blog-caso-exito-la-school-of-dance',
+ 'https://www.mediatic.io/?utm_source=blog&utm_medium=articulo&utm_campaign=caso-sosa-ingredients#contacto':'index.html#contacto" data-link="blog-caso-exito-sosa-ingredients',
 }
 AUTOLINK={'Arrieta Micropigmentación':'https://arrietamicropigmentacion.es/','De Profundis':'https://deprofundis.es/es/'}
 def inline(t,strip_bold):
