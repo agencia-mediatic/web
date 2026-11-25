@@ -157,3 +157,15 @@ document.addEventListener('click',function(e){
 (function(){const g=document.querySelector('.ccards'),w=document.querySelector('.ccards-more');if(!g||!w)return;const N=6,cards=[...g.children];if(cards.length<=N)return;let shown=N;
 cards.forEach((c,i)=>{if(i>=N)c.hidden=true});w.hidden=false;
 w.querySelector('button').addEventListener('click',()=>{cards.slice(shown,shown+N).forEach(c=>c.hidden=false);shown+=N;if(shown>=cards.length)w.hidden=true})})();
+
+// Clics en botones de llamada a la acción: se envían a Tag Manager como evento «boton_click» con el texto del botón (variable boton_texto).
+// Solo si Tag Manager está cargado (es decir, si la persona ha aceptado las cookies). No cuenta los «Ver más» que solo despliegan contenido.
+document.addEventListener('click',function(e){
+  if(!window.__mtGA||!window.dataLayer)return;
+  var b=e.target.closest&&e.target.closest('.btn');
+  if(!b||b.closest('.more-cta'))return;
+  // texto tal como está escrito (sin las mayúsculas del estilo) y solo de la parte visible (la cabecera tiene versión de ordenador y de móvil)
+  var vis=function(n){if(n.nodeType===3)return n.nodeValue;if(n.nodeType!==1||n.tagName==='I'||n.tagName==='SVG'||getComputedStyle(n).display==='none')return '';var s='';n.childNodes.forEach(function(c){s+=vis(c)});return s};
+  var t=vis(b).replace(/[→←↗]/g,'').replace(/\s+/g,' ').trim();
+  if(t)window.dataLayer.push({event:'boton_click',boton_texto:t});
+},true);
