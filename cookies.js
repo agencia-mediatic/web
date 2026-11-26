@@ -30,7 +30,16 @@
     s.src='https://www.googletagmanager.com/gtm.js?id=GTM-WKZJV8WM';
     document.head.appendChild(s);
   }
+  // La elección también se guarda en una cookie técnica de todo mediatic.io (mt_consent), para que el formulario
+  // (form.mediatic.io) sepa si puede cargar el píxel de Meta. Valor: a1m1 = analítica y marketing aceptados.
+  function shareConsent(){
+    if(!st||!/(^|\.)mediatic\.io$/.test(location.hostname))return;
+    const v='a'+(st.analitica?1:0)+'m'+(st.marketing?1:0);
+    const exp=new Date(st.t+MESES*30*864e5).toUTCString();
+    document.cookie='mt_consent='+v+'; domain=.mediatic.io; path=/; expires='+exp+'; SameSite=Lax; Secure';
+  }
   function applyConsent(){
+    shareConsent();
     if(st&&st.terceros)document.querySelectorAll('[data-embed]').forEach(loadEmbed);
     // ► Aquí se cargarán la analítica y los píxeles cuando se sepa cuáles se usan:
     if(st&&st.analitica)loadAnalytics();
