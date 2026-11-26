@@ -34,6 +34,8 @@ INTERNAL={
  'https://www.mediatic.io/contacto':'index.html#contacto" data-link="blog-articulo',
  'https://www.mediatic.io/?utm_source=blog&utm_medium=articulo&utm_campaign=caso-pedro-seo#contacto':'index.html#contacto" data-link="blog-caso-exito-pedro-seo',
  'https://www.mediatic.io/?utm_source=blog&utm_medium=articulo&utm_campaign=caso-school-of-dance#contacto':'index.html#contacto" data-link="blog-caso-exito-la-school-of-dance',
+ 'https://www.mediatic.io/casos-de-exito/mario-cozma':'caso-exito-mario-cozma.html',
+ 'https://www.mediatic.io/?utm_source=blog&utm_medium=articulo&utm_campaign=mejores-agencias-contenido-barcelona#contacto':'index.html#contacto" data-link="blog-mejores-agencias-contenido-barcelona',
  'https://www.mediatic.io/?utm_source=blog&utm_medium=articulo&utm_campaign=caso-sosa-ingredients#contacto':'index.html#contacto" data-link="blog-caso-exito-sosa-ingredients',
 }
 AUTOLINK={'Arrieta Micropigmentación':'https://arrietamicropigmentacion.es/','De Profundis':'https://deprofundis.es/es/'}

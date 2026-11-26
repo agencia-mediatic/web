@@ -27,6 +27,7 @@ window.MEDIATIC = {
     'blog-caso-exito-pedro-seo':'https://form.mediatic.io/?utm_source=web&utm_medium=blog&utm_campaign=caso-exito-pedro-seo',  // Enlace "hablemos" del caso de éxito de Pedro SEO
     'blog-caso-exito-la-school-of-dance':'https://form.mediatic.io/?utm_source=web&utm_medium=blog&utm_campaign=caso-school-of-dance',  // Enlace "cuéntanos tu proyecto" del caso de éxito de La School of Dance
     'blog-caso-exito-sosa-ingredients':'https://form.mediatic.io/?utm_source=web&utm_medium=blog&utm_campaign=caso-sosa-ingredients',  // Enlace "cuéntanos tu proyecto" del caso de éxito de Sosa Ingredients
+    'blog-mejores-agencias-contenido-barcelona':'https://form.mediatic.io/?utm_source=web&utm_medium=blog&utm_campaign=mejores-agencias-contenido-barcelona',  // Enlace "cuéntanos qué necesitas" del artículo de las 5 mejores agencias de contenido en Barcelona
     'blog-articulo':''   // Enlace de texto dentro de los artículos del blog: "agenda una sesión de diagnóstico"
   },
 

@@ -123,6 +123,13 @@ ART_META.update({
   cat='Resultados',date='2026-06-17',fecha='17 de junio de 2026',mins=8,
   thumb='img/blog/caso-exito-la-school-of-dance.jpg',
   excerpt='Consiguimos +8 millones de visualizaciones en los primeros 2 meses.'),
+ 'mejores-agencias-contenido-barcelona.html':dict(
+  title='Las 5 mejores agencias de contenido en Barcelona (2026)',
+  desc='Descubre las 5 mejores agencias de contenido en Barcelona en 2026: qué ofrece cada una, en qué está especializada y cómo elegir la que encaja contigo.',
+  h1='Las 5 mejores agencias de contenido en Barcelona en 2026',
+  cat='Consejos',date='2026-11-26',fecha='26 de noviembre de 2026',mins=7,
+  thumb='img/blog/mejores-agencias-contenido-barcelona.jpg',
+  excerpt='Mediatic, Peter Lead, Palo Seco, ImageMedia y Agencia Visuals: qué ofrece cada una, en qué está especializada y cómo elegir la que encaja contigo.'),
  'guion-perfecto-instagram.html':dict(
   title='Cómo escribir el guion perfecto para Instagram: el proceso paso a paso',
   desc='Aprende a escribir el guion perfecto para Instagram: cómo encontrar ideas, validarlas, elegir el formato y adaptar tu guion para que funcione. Paso a paso.',
@@ -155,7 +162,7 @@ GAL_ALTS={'img/blog/sosa-ingredients-videos-ahora':['Vídeo de Sosa Ingredients 
  'Reel de De Profundis con 143 mil visualizaciones: el nitrox sirve para bucear',
  'Reel de De Profundis con 98,2 mil visualizaciones: ranking de mejores lugares para buceo',
  'Reel de De Profundis con 199 mil visualizaciones: gas para buceo']}
-RELATED={'caso-exito-sosa-ingredients.html':['de-profundis.html','caso-exito-mario-cozma.html','caso-exito-pedro-seo.html'],'caso-exito-la-school-of-dance.html':['de-profundis.html','caso-exito-gisela-jorba.html','caso-exito-pedro-seo.html'],'caso-exito-pedro-seo.html':['caso-exito-gisela-jorba.html','caso-exito-marina-garrido.html','caso-exito-mario-cozma.html'],'guion-perfecto-instagram.html':['mitos-de-instagram.html','pmu-paradise.html','servicios.html'],'pmu-paradise.html':['gamma-pmu-congress-2026.html','opciones-marketing-2026.html'],'opciones-marketing-2026.html':['mitos-de-instagram.html','de-profundis.html'],'mediatic-cumple-2-anos.html':['de-profundis.html','gamma-pmu-congress-2026.html'],'mitos-de-instagram.html':['de-profundis.html','gamma-pmu-congress-2026.html','guion-perfecto-instagram.html','servicios.html'],'de-profundis.html':['mitos-de-instagram.html','servicios.html'],'gamma-pmu-congress-2026.html':['mitos-de-instagram.html','servicios.html']}
+RELATED={'mejores-agencias-contenido-barcelona.html':['servicios.html','caso-exito-mario-cozma.html','caso-exito-marina-garrido.html'],'caso-exito-sosa-ingredients.html':['de-profundis.html','caso-exito-mario-cozma.html','caso-exito-pedro-seo.html'],'caso-exito-la-school-of-dance.html':['de-profundis.html','caso-exito-gisela-jorba.html','caso-exito-pedro-seo.html'],'caso-exito-pedro-seo.html':['caso-exito-gisela-jorba.html','caso-exito-marina-garrido.html','caso-exito-mario-cozma.html'],'guion-perfecto-instagram.html':['mitos-de-instagram.html','pmu-paradise.html','servicios.html'],'pmu-paradise.html':['gamma-pmu-congress-2026.html','opciones-marketing-2026.html'],'opciones-marketing-2026.html':['mitos-de-instagram.html','de-profundis.html'],'mediatic-cumple-2-anos.html':['de-profundis.html','gamma-pmu-congress-2026.html'],'mitos-de-instagram.html':['de-profundis.html','gamma-pmu-congress-2026.html','guion-perfecto-instagram.html','servicios.html'],'de-profundis.html':['mitos-de-instagram.html','servicios.html'],'gamma-pmu-congress-2026.html':['mitos-de-instagram.html','servicios.html']}
 ART_META=dict(sorted(ART_META.items(),key=lambda kv:kv[1].get('date',''),reverse=True))
 def canon(file): return SITE+('/' if file=='index.html' else '/'+file)
 def esc(t): return t.replace('&','&amp;').replace('"','&quot;').replace('<','&lt;')
