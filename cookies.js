@@ -50,7 +50,7 @@
   const cookieLink=LG.cookies||'#';
   wrap.innerHTML=
   '<div class="ck" role="dialog" aria-live="polite" aria-label="Aviso de cookies" hidden>'+
-    '<p><b>Tu privacidad, tu decisión.</b> Usamos cookies propias y de terceros para que la web funcione, medir su uso con Google Analytics y Microsoft Clarity y mostrar contenido externo (como el mapa). Puedes aceptarlas, rechazarlas o elegir cuáles. Más información en la <a href="'+cookieLink+'" data-legal="cookies" target="_blank" rel="noopener">Política de cookies</a>.</p>'+
+    '<p><b>Tu privacidad, tu decisión.</b> Usamos cookies propias y de terceros para que la web funcione, medir su uso con Google Analytics y Microsoft Clarity, medir nuestras campañas con Meta y mostrar contenido externo (como el mapa). Puedes aceptarlas, rechazarlas o elegir cuáles. Más información en la <a href="'+cookieLink+'" data-legal="cookies" target="_blank" rel="noopener">Política de cookies</a>.</p>'+
     '<div class="ck-row"><button type="button" class="ck-b ck-no" data-ck="no">Rechazar</button><button type="button" class="ck-b ck-yes" data-ck="yes">Aceptar todas</button></div>'+
     '<button type="button" class="ck-cfg" data-ck="cfg">Configurar</button>'+
   '</div>'+
@@ -58,7 +58,7 @@
     '<h3>Configurar cookies</h3>'+
     '<label class="ckp-i"><div><b>Necesarias</b><span>Hacen que la web funcione (guardan tu elección de cookies). Siempre activas.</span></div><input type="checkbox" checked disabled></label>'+
     '<label class="ckp-i"><div><b>Analíticas</b><span>Google Analytics y Microsoft Clarity: nos dicen cuántas personas visitan la web, qué páginas ven y cómo navegan por ellas, para mejorarla.</span></div><input type="checkbox" id="ck-an"></label>'+
-    '<label class="ckp-i"><div><b>Marketing</b><span>Nos permiten medir de qué anuncio o enlace llegas.</span></div><input type="checkbox" id="ck-mk"></label>'+
+    '<label class="ckp-i"><div><b>Marketing</b><span>Píxel de Meta: nos permite medir de qué anuncio llegas y mostrarte anuncios relevantes en Facebook e Instagram.</span></div><input type="checkbox" id="ck-mk"></label>'+
     '<label class="ckp-i"><div><b>Contenido de terceros</b><span>Mapa de Google y otros contenidos externos.</span></div><input type="checkbox" id="ck-tr"></label>'+
     '<div class="ck-row"><button type="button" class="ck-b ck-no" data-ck="no">Rechazar todas</button><button type="button" class="ck-b ck-yes" data-ck="yes">Aceptar todas</button></div>'+
     '<button type="button" class="ck-save" data-ck="save">Guardar mi selección</button>'+

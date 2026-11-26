@@ -234,6 +234,7 @@ def page(file,title,body):
 <meta name="robots" content="{robots}">
 {"" if file=="404.html" else '<link rel="canonical" href="'+canon(file)+'">'}
 <meta name="theme-color" content="#1B1BCB">
+{'<meta name="facebook-domain-verification" content="sp1h2zz5vve6y0pnl1pmnou08towdk" />' if file=="index.html" else ''}
 <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Mediatic"><meta property="og:locale" content="es_ES">
 <meta property="og:title" content="{esc(st)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{canon(file)}">
