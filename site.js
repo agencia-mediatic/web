@@ -19,7 +19,8 @@ function initPlane(cv,opt){
   let run=true,raf=0;
   const pts=[[1545,590],[342,942],[648,1060],[681,1180],[826,1082],[921,1455]];
   const flapPts=[[648,1060],[681,1180],[826,1082]];
-  const cx0=860,cy0=1040,rot=Math.atan2(590-cy0,1545-cx0),S=.08;
+  // Tamaño del avión: en ordenador .08; en móvil (pantallas de menos de 700 px) más pequeño para que no tape el texto
+  const cx0=860,cy0=1040,rot=Math.atan2(590-cy0,1545-cx0),S=(innerWidth<700?.045:.08);
   const mk=a=>{const q=new Path2D();a.forEach(([x,y],i)=>{const dx=x-cx0,dy=y-cy0,c=Math.cos(-rot),sn=Math.sin(-rot);const X=(dx*c-dy*sn)*S,Y=(dx*sn+dy*c)*S;i?q.lineTo(X,Y):q.moveTo(X,Y)});q.closePath();return q};
   const plane=mk(pts),fold=mk(flapPts);
   let P={x:W*.2,y:H*.7},V={x:0,y:0},ang=0,mouse=null,loop=0,trail=[],t0=0;
@@ -38,7 +39,7 @@ function initPlane(cv,opt){
     while(trail.length&&t-trail[0].t>2.2)trail.shift();
     ctx.clearRect(0,0,W,H);
     ctx.lineCap='round';ctx.setLineDash([2,14]);
-    for(let i=1;i<trail.length;i++){const a=1-(t-trail[i].t)/2.2;ctx.strokeStyle='rgba(27,27,203,'+(.55*a)+')';ctx.lineWidth=2+3*a;ctx.beginPath();ctx.moveTo(trail[i-1].x,trail[i-1].y);ctx.lineTo(trail[i].x,trail[i].y);ctx.stroke()}
+    for(let i=1;i<trail.length;i++){const a=1-(t-trail[i].t)/2.2;ctx.strokeStyle='rgba(27,27,203,'+(.55*a)+')';ctx.lineWidth=(innerWidth<700?1.2+1.8*a:2+3*a);ctx.beginPath();ctx.moveTo(trail[i-1].x,trail[i-1].y);ctx.lineTo(trail[i].x,trail[i].y);ctx.stroke()}
     ctx.setLineDash([]);
     ctx.save();ctx.translate(P.x,P.y);ctx.rotate(draw);
     ctx.scale(1,1-Math.max(-.5,Math.min(.5,sp*.004))*.4);

@@ -1319,3 +1319,23 @@ section.reels{overflow-x:clip}
 .prose .tipbox b{display:block;font-family:'SF Pro Display',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.8;margin-bottom:8px}
 .prose .tipbox p{margin:0;color:#fff;font-size:clamp(16px,1.6vw,18px);line-height:1.5;font-weight:500}
 @media(max-width:700px){.prose .tipbox{padding:20px;margin:24px 0}}
+
+/* Móvil: «No lo decimos nosotros» ocupa dos líneas; la raya pasa a tachar solo «nosotros» */
+@media(max-width:759px){
+ .sec-h .strike::after{display:none}
+ .sec-h .strike-m{position:relative;display:inline-block}
+ .sec-h .strike-m::after{content:"";position:absolute;left:-3%;right:-3%;top:54%;height:4px;background:var(--blue);transform:rotate(-1.5deg);border-radius:4px}
+}
+
+/* Móvil: el avión de «Hablemos» vuela por detrás del texto y del mapa */
+@media(max-width:699px){.quote-sec .wrap{position:relative;z-index:1}}
+@media(max-width:699px){#fly,#fly2{opacity:.4}}
+
+/* Móvil: menos espacio entre el título de cada página y lo primero que viene después */
+@media(max-width:700px){
+ .hero{padding-bottom:12px}
+ .hero-sub{margin-bottom:14px}
+ .page-head,.page-head.ph-center,.page-head.ph-center.ph-tight{padding-bottom:26px}
+ .page-head + .reels{padding-top:0}
+}
+@media(max-width:700px){.page-head,.page-head.ph-center,.page-head.ph-center.ph-tight{padding-top:96px}}

@@ -294,13 +294,13 @@ def _card(t):
       '<div class="rauth">%s<b>%s</b>%s</div>'
       '<h3>%s</h3>%s</article>')%(vid,name,vid,name,av,name,('<span>%s</span>'%_h.escape(t['niche'])) if t.get('niche') else '',_h.escape(t['headline']),('<p>%s</p>'%_h.escape(t['context'])) if t.get('context') else '')
 RESULTS=('<section class="results" id="opiniones"><div class="wrap"><div class="tag">Opiniones</div>'
- '<h2 class="sec-h"><span class="strike">No lo decimos nosotros</span><br><span class="hand">lo dicen ellos</span></h2>'
+ '<h2 class="sec-h"><span class="strike">No lo decimos <span class="strike-m">nosotros</span></span><br><span class="hand">lo dicen ellos</span></h2>'
  '<p class="sub" style="max-width:700px">Charlas con nuestros clientes que revelan su opinión sobre el servicio.</p>'
  '<div class="rgrid">'+''.join(_card(t) for t in _E)+'</div></div></section>')
 # --- HOME: solo 3 entrevistas (Marina, Mario, Gisela) + "Ver más" → opiniones.html ---
 _HOME_ENT=[0,2,1]
 RESULTS_HOME=('<section class="results" id="opiniones"><div class="wrap"><div class="tag">Opiniones</div>'
- '<h2 class="sec-h"><span class="strike">No lo decimos nosotros</span><br><span class="hand">lo dicen ellos</span></h2>'
+ '<h2 class="sec-h"><span class="strike">No lo decimos <span class="strike-m">nosotros</span></span><br><span class="hand">lo dicen ellos</span></h2>'
  '<p class="sub" style="max-width:700px">Charlas con nuestros clientes que revelan su opinión sobre el servicio.</p>'
  '<div class="rgrid">'+''.join(_card(_E[i]) for i in _HOME_ENT)+'</div>'
  '<div class="more-cta"><a class="btn" href="opiniones.html">Ver más opiniones <i>→</i></a></div></div></section>')
